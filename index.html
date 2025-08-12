@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/487214272_1139355878202047_7481455106585690725_n.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <title>Blueberry Menu</title>
+</head>
+
+<body>
+
+  <!-- Splash Screen -->
+  <div id="splash-screen">
+    <div class="splash-content">
+      <img src="images/487214272_1139355878202047_7481455106585690725_n.jpg" alt="Logo" class="splash-logo">
+      <h1 class="splash-title">Blueberry</h1>
+      <p class="splash-subtitle m-0">Welcome To Your Second Home</p>
+      <p class="splash-subtitle">Fresh Taste, Every Bite</p>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-blueberry fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Blueberry</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <!-- للشاشات الكبيرة: Dropdown واحد -->
+          <li class="nav-item dropdown d-none d-lg-block">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              الأقسام
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#pizza">بيتزا</a></li>
+              <li><a class="dropdown-item" href="#italian-pizza">بيتزا إيطالي</a></li>
+              <li><a class="dropdown-item" href="#main-bowls">أطباق رئيسية</a></li>
+              <li><a class="dropdown-item" href="#burger">برجر</a></li>
+              <li><a class="dropdown-item" href="#pasta">باستا</a></li>
+              <li><a class="dropdown-item" href="#sandwiches">ساندويتشات</a></li>
+              <li><a class="dropdown-item" href="#lo2met-blueberry">لقمة بلوبيري</a></li>
+              <li><a class="dropdown-item" href="#starters">مقبلات</a></li>
+              <li><a class="dropdown-item" href="#salads">سلطات</a></li>
+              <li><a class="dropdown-item" href="#soups">شوربات</a></li>
+              <li><a class="dropdown-item" href="#kids-meal">وجبات أطفال</a></li>
+              <li><a class="dropdown-item" href="#fresh">فريش</a></li>
+              <li><a class="dropdown-item" href="#cocktails">كوكتيلات</a></li>
+              <li><a class="dropdown-item" href="#smoothies">سموذي</a></li>
+              <li><a class="dropdown-item" href="#milkshake">ميلك شيك</a></li>
+              <li><a class="dropdown-item" href="#soda-cocktails">صودا كوكتيل</a></li>
+              <li><a class="dropdown-item" href="#ice-coffee">آيس كوفي</a></li>
+              <li><a class="dropdown-item" href="#hot">مشروبات ساخنة</a></li>
+              <li><a class="dropdown-item" href="#dessert">حلويات</a></li>
+            </ul>
+          </li>
+
+          <!-- للشاشات الصغيرة: القائمة كاملة -->
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#pizza">بيتزا</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#italian-pizza">بيتزا إيطالي</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#main-bowls">أطباق رئيسية</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#burger">برجر</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#pasta">باستا</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#sandwiches">ساندويتشات</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#lo2met-blueberry">لقمة بلوبيري</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#starters">مقبلات</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#salads">سلطات</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#soups">شوربات</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#kids-meal">وجبات أطفال</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#fresh">فريش</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#cocktails">كوكتيلات</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#smoothies">سموذي</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#milkshake">ميلك شيك</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#soda-cocktails">صودا كوكتيل</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#ice-coffee">آيس كوفي</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#hot">مشروبات ساخنة</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#dessert">حلويات</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Navbar -->
+  <!-- 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-blueberry fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Blueberry</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#pizza">بيتزا</a></li>
+          <li class="nav-item"><a class="nav-link" href="#italian-pizza">بيتزا إيطالي</a></li>
+          <li class="nav-item"><a class="nav-link" href="#main-bowls">أطباق رئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="#burger">برجر</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pasta">باستا</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sandwiches">ساندويتشات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lo2met-blueberry">لقمة بلوبيري</a></li>
+          <li class="nav-item"><a class="nav-link" href="#starters">مقبلات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#salads">سلطات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#soups">شوربات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kids-meal">وجبات أطفال</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fresh">فريش</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cocktails">كوكتيلات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#smoothies">سموذي</a></li>
+          <li class="nav-item"><a class="nav-link" href="#milkshake">ميلك شيك</a></li>
+          <li class="nav-item"><a class="nav-link" href="#soda-cocktails">صودا كوكتيل</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ice-coffee">آيس كوفي</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hot">مشروبات ساخنة</a></li>
+          <li class="nav-item"><a class="nav-link" href="#dessert">حلويات</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <!-- Main Content -->
+  <main class="container mt-5 pt-5">
+
+    <!-- 🍕 بيتزا -->
+    <section id="pizza" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">🍕 بيتزا بلوبيري</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="بيتزا بلوبيري">
+            <div class="card-body">
+              <h5 class="card-title">بيتزا بلوبيري</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: صوص طماطم، جبنة موتزاريلا، توبينج بلوبيري</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="بيتزا خضار">
+            <div class="card-body">
+              <h5 class="card-title">بيتزا خضار</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: خضار مشكل، صوص طماطم، جبنة موتزاريلا</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🍕 بيتزا إيطالي -->
+    <section id="italian-pizza" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">🍕 بيتزا إيطالي</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="مارجريتا">
+            <div class="card-body">
+              <h5 class="card-title">مارجريتا</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: صوص طماطم، جبنة موتزاريلا</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="بيبروني">
+            <div class="card-body">
+              <h5 class="card-title">بيبروني</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: بيبروني، صوص طماطم، جبنة موتزاريلا</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🥘 أطباق رئيسية -->
+    <section id="main-bowls" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">🥘 أطباق رئيسية</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="شاورما دجاج">
+            <div class="card-body">
+              <h5 class="card-title">شاورما دجاج</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: دجاج متبل، صوص طحينة، خضار</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="كفتة لحم">
+            <div class="card-body">
+              <h5 class="card-title">كفتة لحم</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: لحم مفروم متبل، بصل، بهارات</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🍔 برجر -->
+    <section id="burger" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">🍔 برجر</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="تشيز برجر">
+            <div class="card-body">
+              <h5 class="card-title">تشيز برجر</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: لحم برجر، جبنة شيدر، خس، طماطم</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="دبل برجر">
+            <div class="card-body">
+              <h5 class="card-title">دبل برجر</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: قطعتين لحم، جبنة شيدر، بصل كارمل</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🍝 باستا -->
+    <section id="pasta" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">🍝 باستا</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="باستا ألفريدو">
+            <div class="card-body">
+              <h5 class="card-title">باستا ألفريدو</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: مكرونة، صوص كريمي، دجاج مشوي</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="باستا بولونيز">
+            <div class="card-body">
+              <h5 class="card-title">باستا بولونيز</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: مكرونة، صوص طماطم، لحم مفروم</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 🥪 ساندويتشات -->
+    <section id="sandwiches" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">🥪 ساندويتشات</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="ساندويتش دجاج">
+            <div class="card-body">
+              <h5 class="card-title">ساندويتش دجاج</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: دجاج مشوي، خس، طماطم، مايونيز</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="ساندويتش لحم">
+            <div class="card-body">
+              <h5 class="card-title">ساندويتش لحم</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: لحم مشوي، جبنة شيدر، صوص خاص</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🫓 لقمة بلوبيري -->
+    <section id="lo2met-blueberry" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">🫓 لقمة بلوبيري</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="لقمة بلوبيري">
+            <div class="card-body">
+              <h5 class="card-title">لقمة بلوبيري</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: عجينة محشية بلوبيري وصوص حلو</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🥗 سلطات -->
+    <section id="salads" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">🥗 سلطات</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="سلطة خضار">
+            <div class="card-body">
+              <h5 class="card-title">سلطة خضار</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: خس، طماطم، خيار، زيت زيتون</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="سلطة سيزر">
+            <div class="card-body">
+              <h5 class="card-title">سلطة سيزر</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: خس، دجاج مشوي، جبنة بارميزان، صوص سيزر</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🍲 شوربات -->
+    <section id="soups" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">🍲 شوربات</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="شوربة طماطم">
+            <div class="card-body">
+              <h5 class="card-title">شوربة طماطم</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: طماطم طازجة، كريمة، أعشاب</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="شوربة كريمة دجاج">
+            <div class="card-body">
+              <h5 class="card-title">شوربة كريمة دجاج</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: دجاج، كريمة، بصل، جزر</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 👶 وجبات أطفال -->
+    <section id="kids-meal" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">👶 وجبات أطفال</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="وجبة ميني برجر">
+            <div class="card-body">
+              <h5 class="card-title">وجبة ميني برجر</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: ميني برجر، بطاطس مقلية، عصير صغير</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🥤 فريش -->
+    <section id="fresh" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">🥤 فريش</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="عصير برتقال">
+            <div class="card-body">
+              <h5 class="card-title">عصير برتقال</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: برتقال طازج</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🍹 كوكتيلات -->
+    <section id="cocktails" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">🍹 كوكتيلات</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="كوكتيل فواكه">
+            <div class="card-body">
+              <h5 class="card-title">كوكتيل فواكه</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: موز، فراولة، مانجو</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🥤 سموذي -->
+    <section id="smoothies" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">🥤 سموذي</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="سموذي مانجو">
+            <div class="card-body">
+              <h5 class="card-title">سموذي مانجو</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: مانجو، زبادي، عسل</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🥛 ميلك شيك -->
+    <section id="milkshake" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">🥛 ميلك شيك</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="ميلك شيك فانيليا">
+            <div class="card-body">
+              <h5 class="card-title">ميلك شيك فانيليا</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: حليب، آيس كريم فانيليا</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🥤 صودا كوكتيل -->
+    <section id="soda-cocktails" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">🥤 صودا كوكتيل</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="صودا فراولة">
+            <div class="card-body">
+              <h5 class="card-title">صودا فراولة</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: فراولة، صودا، ثلج</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ☕ آيس كوفي -->
+    <section id="ice-coffee" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">☕ آيس كوفي</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="آيس كوفي كلاسيك">
+            <div class="card-body">
+              <h5 class="card-title">آيس كوفي كلاسيك</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: قهوة، حليب، ثلج</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ☕ مشروبات ساخنة -->
+    <section id="hot" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">☕ مشروبات ساخنة</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="قهوة تركي">
+            <div class="card-body">
+              <h5 class="card-title">قهوة تركي</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: بن تركي مطحون، ماء</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🍰 حلويات -->
+    <section id="dessert" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">🍰 حلويات</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card product-card h-100">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="تشيز كيك">
+            <div class="card-body">
+              <h5 class="card-title">تشيز كيك</h5>
+              <p class="card-text">XX جنيه</p>
+              <p class="card-text"><small>مكونات: بسكويت، جبنة كريمية، صوص فواكه</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-2">© 2025 Blueberry – الجودة أولاً، والذوق دايمًا</p>
+      <div class="mb-2">
+        <a href="https://www.facebook.com" target="_blank" class="text-light mx-2 fs-5"><i
+            class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank" class="text-light mx-2 fs-5"><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/201006067349" target="_blank" class="text-light mx-2 fs-5"><i
+            class="fab fa-whatsapp"></i></a>
+      </div>
+      <p class="mb-0">
+        <i class="fas fa-phone-alt"></i> 01006067349
+      </p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
