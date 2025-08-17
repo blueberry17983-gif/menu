@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="images/487214272_1139355878202047_7481455106585690725_n.jpg" type="image/x-icon">
+
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,20 +13,10 @@
 
   <title>Blueberry Menu</title>
   <style>
-    /* للشاشات الكبيرة فقط - Dropdown */
-    @media (min-width: 992px) {
-      .dropdown-menu {
-        max-height: 70vh;
-        overflow-y: auto;
-      }
-    }
-
-    /* للشاشات الصغيرة فقط - القائمة الكاملة */
-    @media (max-width: 991.98px) {
-      .navbar-collapse {
-        max-height: 70vh;
-        overflow-y: auto;
-      }
+    /* Scroll داخل الـ dropdown في أي شاشة */
+    .dropdown-menu {
+      max-height: 70vh;
+      overflow-y: auto;
     }
   </style>
 </head>
@@ -45,14 +36,17 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-blueberry fixed-top shadow">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Blueberry</a>
+      <a class="navbar-brand fw-bold text-center fs-3 text-white" href="#">
+        <span style="font-family: 'Cairo', sans-serif; letter-spacing: 1px;">بلوبيري</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav me-auto">
 
-
+          <!-- للشاشات الكبيرة -->
           <li class="nav-item dropdown d-none d-lg-block">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
               الأقسام
@@ -77,95 +71,173 @@
               <li><a class="dropdown-item" href="#ice-coffee">آيس كوفي</a></li>
               <li><a class="dropdown-item" href="#hot">مشروبات ساخنة</a></li>
               <li><a class="dropdown-item" href="#dessert">حلويات</a></li>
+              <li><a class="dropdown-item" href="#bottled-drinks">مياه ومشروبات معبأة</a></li>
             </ul>
           </li>
 
-
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#pizza">بيتزا</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#italian-pizza">بيتزا إيطالي</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#main-bowls">أطباق رئيسية</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#burger">برجر</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#pasta">باستا</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#sandwiches">ساندويتشات</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#lo2met-blueberry">لقمة بلوبيري</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#starters">مقبلات</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#salads">سلطات</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#soups">شوربات</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#kids-meal">وجبات أطفال</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#fresh">فريش</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#cocktails">كوكتيلات</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#smoothies">سموذي</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#milkshake">ميلك شيك</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#soda-cocktails">صودا كوكتيل</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#ice-coffee">آيس كوفي</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#hot">مشروبات ساخنة</a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link" href="#dessert">حلويات</a></li>
+          <!-- للشاشات الصغيرة -->
+          <div class="d-lg-none" style="max-height: 70vh; overflow-y: auto;">
+            <li class="nav-item"><a class="nav-link" href="#pizza">بيتزا</a></li>
+            <li class="nav-item"><a class="nav-link" href="#italian-pizza">بيتزا إيطالي</a></li>
+            <li class="nav-item"><a class="nav-link" href="#main-bowls">أطباق رئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="#burger">برجر</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pasta">باستا</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sandwiches">ساندويتشات</a></li>
+            <li class="nav-item"><a class="nav-link" href="#lo2met-blueberry">لقمة بلوبيري</a></li>
+            <li class="nav-item"><a class="nav-link" href="#starters">مقبلات</a></li>
+            <li class="nav-item"><a class="nav-link" href="#salads">سلطات</a></li>
+            <li class="nav-item"><a class="nav-link" href="#soups">شوربات</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kids-meal">وجبات أطفال</a></li>
+            <li class="nav-item"><a class="nav-link" href="#fresh">فريش</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cocktails">كوكتيلات</a></li>
+            <li class="nav-item"><a class="nav-link" href="#smoothies">سموذي</a></li>
+            <li class="nav-item"><a class="nav-link" href="#milkshake">ميلك شيك</a></li>
+            <li class="nav-item"><a class="nav-link" href="#soda-cocktails">صودا كوكتيل</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ice-coffee">آيس كوفي</a></li>
+            <li class="nav-item"><a class="nav-link" href="#hot">مشروبات ساخنة</a></li>
+            <li class="nav-item"><a class="nav-link" href="#dessert">حلويات</a></li>
+            <li class="nav-item"><a class="nav-link" href="#bottled-drinks">مياه ومشروبات معبأة</a></li>
+          </div>
 
         </ul>
       </div>
     </div>
   </nav>
 
-
-
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-blueberry fixed-top shadow">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Blueberry</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#pizza">بيتزا</a></li>
-          <li class="nav-item"><a class="nav-link" href="#italian-pizza">بيتزا إيطالي</a></li>
-          <li class="nav-item"><a class="nav-link" href="#main-bowls">أطباق رئيسية</a></li>
-          <li class="nav-item"><a class="nav-link" href="#burger">برجر</a></li>
-          <li class="nav-item"><a class="nav-link" href="#pasta">باستا</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sandwiches">ساندويتشات</a></li>
-          <li class="nav-item"><a class="nav-link" href="#lo2met-blueberry">لقمة بلوبيري</a></li>
-          <li class="nav-item"><a class="nav-link" href="#starters">مقبلات</a></li>
-          <li class="nav-item"><a class="nav-link" href="#salads">سلطات</a></li>
-          <li class="nav-item"><a class="nav-link" href="#soups">شوربات</a></li>
-          <li class="nav-item"><a class="nav-link" href="#kids-meal">وجبات أطفال</a></li>
-          <li class="nav-item"><a class="nav-link" href="#fresh">فريش</a></li>
-          <li class="nav-item"><a class="nav-link" href="#cocktails">كوكتيلات</a></li>
-          <li class="nav-item"><a class="nav-link" href="#smoothies">سموذي</a></li>
-          <li class="nav-item"><a class="nav-link" href="#milkshake">ميلك شيك</a></li>
-          <li class="nav-item"><a class="nav-link" href="#soda-cocktails">صودا كوكتيل</a></li>
-          <li class="nav-item"><a class="nav-link" href="#ice-coffee">آيس كوفي</a></li>
-          <li class="nav-item"><a class="nav-link" href="#hot">مشروبات ساخنة</a></li>
-          <li class="nav-item"><a class="nav-link" href="#dessert">حلويات</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
-
-
   <main class="container mt-5 pt-5">
-
-
     <section id="pizza" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2">🍕 بيتزا بلوبيري</h2>
       <div class="row g-4">
+        <!-- الصورة الأولى -->
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="images/530729889_1252160593588241_5396587901924176472_n.jpg" class="card-img-top"
-              alt="بيتزا بلوبيري">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/pizza_pepperoni.jpg" class="card-img-top" alt="بيتزا بلوبيري بيبروني">
             <div class="card-body">
-              <h5 class="card-title">بيتزا بلوبيري</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: صوص طماطم، جبنة موتزاريلا، توبينج بلوبيري</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري بيبروني</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">125 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                المكونات: شرائح بيبروني مع مكس جبن، موتزاريلا و سمسم
+              </p>
             </div>
           </div>
         </div>
+
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="https://via.placeholder.com/400" class="card-img-top" alt="بيتزا خضار">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/pizza_sausage.jpg" class="card-img-top" alt="بيتزا بلوبيري سجق وبسطرمة">
             <div class="card-body">
-              <h5 class="card-title">بيتزا خضار</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: خضار مشكل، صوص طماطم، جبنة موتزاريلا</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري سجق وبسطرمة</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">140 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: قطع سجق مع بسطرمة، فلفل،
+                بصل،
+                موتزاريلا، صوص باربيكيو و سمسم</>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/pizza_seafood.jpg" class="card-img-top" alt="بيتزا بلوبيري سي فوود">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري سي فوود</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">150 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: جمبري طازج مع
+                كاليماري،
+                أصابع كابوريا، موتزاريلا، بصل، طماطم، فلفل،
+                صوص
+                رانش و سمسم</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/pizza_hotdog.jpg" class="card-img-top" alt="بيتزا بلوبيري هوت دوج">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري هوت دوج</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">115 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: قطع هوت دوج، فلفل،
+                زيتون، موتزاريلا و سمسم</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/pizza_chicken.jpg" class="card-img-top" alt="بيتزا بلوبيري تشيكن باربيكيو">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري تشيكن باربيكيو</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">130 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: قطع دجاج مشوية مع صوص
+                حار، فلفل، بصل، صوص باربيكيو، موتزاريلا
+                و سمسم</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- الصورة الثانية -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/pizza_crispy.jpg" class="card-img-top" alt="بيتزا بلوبيري كرسبي">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري كرسبي</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">135 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: قطع دجاج كرسبي مع
+                بيبروني، موتزاريلا، صوص تكساس و سمسم</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/pizza_supreme.jpg" class="card-img-top" alt="بيتزا بلوبيري سوبرسوبريم">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري سوبر سوبريم</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">130 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: قطع سجق وشرائح
+                بيبروني،
+                هوت دوج، فلفل، بصل، طماطم، صوص تكساس
+                وموتزاريلا</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/pizza_smoked.jpg" class="card-img-top" alt="بيتزا بلوبيري مدخنة">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري سموكد</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">150 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: شرائح لحم مدخن، شرائح
+                تركية مدخنة، موتزاريلا، صوص رانش مع صوص تكساس
+                و سمسم</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/pizza_cheese.jpg" class="card-img-top" alt="بيتزا بلوبيري جمبري">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري جمبري</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">150 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: جمبري طازه مع بصل،
+                زيتون، موتزاريلا، فلفل، صوص رانش وسمسم</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/pizza_chicken_supreme.jpg" class="card-img-top" alt="بيتزا بلوبيري تشيكن سوبريم">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري تشيكن سوبريم</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">145 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: قطع دجاج مشوية مع
+                مشروم،
+                ذرة حلوة، موتزاريلا، صوص رانش و سمسم
+              </p>
             </div>
           </div>
         </div>
@@ -176,23 +248,154 @@
     <section id="italian-pizza" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2">🍕 بيتزا إيطالي</h2>
       <div class="row g-4">
+        <!-- الصورة الأولى -->
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="https://via.placeholder.com/400" class="card-img-top" alt="مارجريتا">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="كرسبي">
             <div class="card-body">
-              <h5 class="card-title">مارجريتا</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: صوص طماطم، جبنة موتزاريلا</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">كرسبي</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">115 جنيه</p>
             </div>
           </div>
         </div>
+
         <div class="col-md-6">
-          <div class="card product-card h-100">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="سوبر سوبريم">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سوبر سوبريم</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">110 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="سموكد">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سموكد</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">130 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="جمبري">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">جمبري</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">130 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="تشيكن رانش">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تشيكن رانش</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">125 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="مارجريتا">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">مارجريتا</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="خضار">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">خضار</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">85 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="عشاق الجبن">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">عشاق الجبن</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">110 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- الصورة الثانية -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="https://via.placeholder.com/400" class="card-img-top" alt="بيبروني">
             <div class="card-body">
-              <h5 class="card-title">بيبروني</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: بيبروني، صوص طماطم، جبنة موتزاريلا</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بيبروني</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">105 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="سجق">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سجق</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">120 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="سي فود">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سي فود</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">130 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="هوت دوج">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">هوت دوج</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">95 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="تشيكن باربيكيو">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تشيكن باربيكيو</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">110 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="بسطرمة">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بسطرمة</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">120 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="https://via.placeholder.com/400" class="card-img-top" alt="جمبري">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">جمبري</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">130 جنيه</p>
             </div>
           </div>
         </div>
@@ -204,22 +407,83 @@
       <h2 class="mb-4 border-bottom border-dark pb-2">🥘 أطباق رئيسية</h2>
       <div class="row g-4">
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="https://via.placeholder.com/400" class="card-img-top" alt="شاورما دجاج">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/chicken_blue.jpg" class="card-img-top" alt="كوردن بلو">
             <div class="card-body">
-              <h5 class="card-title">شاورما دجاج</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: دجاج متبل، صوص طحينة، خضار</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">كوردن بلو</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">140 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: صدور الفراخ المحشية لحم
+                مدخن
+                ومشروم</p>
             </div>
           </div>
         </div>
+
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="https://via.placeholder.com/400" class="card-img-top" alt="كفتة لحم">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/chicken_green_mushroom.jpg" class="card-img-top" alt="تشيكن جرين مشروم">
             <div class="card-body">
-              <h5 class="card-title">كفتة لحم</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: لحم مفروم متبل، بصل، بهارات</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تشيكن جرين مشروم</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">135 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: صدور الفراخ المشوية مع صوص
+                المشروم</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/fajita_blueberry.jpg" class="card-img-top" alt="فاهيتا بلوبيري">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">فاهيتا بلوبيري</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">150 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: قطع فراخ مشوية مع الجمبري
+                المشوي و الخضار</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/fajita_chicken.jpg" class="card-img-top" alt="فاهيتا دجاج">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">فاهيتا دجاج</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">140 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: قطع فراخ مشوية مع الخضار
+                والتوابل</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/fajita_shrimp.jpg" class="card-img-top" alt="فاهيتا جمبري">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">فاهيتا جمبري</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">130 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: جمبري طازج مع الخضار
+                والتوابل
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/chicken_almond.jpg" class="card-img-top" alt="تشيكن الوميد">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تشيكن الوميد</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">130 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/chicken_green_herbs.jpg" class="card-img-top" alt="تشيكن جريل مشروم">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تشيكن جريل مشروم</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">125 جنيه</p>
             </div>
           </div>
         </div>
@@ -231,22 +495,84 @@
       <h2 class="mb-4 border-bottom border-dark pb-2">🍔 برجر</h2>
       <div class="row g-4">
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="https://via.placeholder.com/400" class="card-img-top" alt="تشيز برجر">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/meat_cuts.jpg" class="card-img-top" alt="برجر كلاسيك">
             <div class="card-body">
-              <h5 class="card-title">تشيز برجر</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: لحم برجر، جبنة شيدر، خس، طماطم</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">برجر كلاسيك</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">80 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">مكونات: قطع لحم طازج مع شرائح بصل
+                وطماطم</p>
             </div>
           </div>
         </div>
+
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="https://via.placeholder.com/400" class="card-img-top" alt="دبل برجر">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/double_burger.jpg" class="card-img-top" alt="دوبل برجر">
             <div class="card-body">
-              <h5 class="card-title">دبل برجر</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: قطعتين لحم، جبنة شيدر، بصل كارمل</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">دوبل برجر</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">130 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                مكونات: طبقتين من برجر اللحم، جبنة شيدر، خس، طماطم، بصل، مخلل، صوص خاص
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/burger_barbecue.jpg" class="card-img-top" alt="برجر باربيكيو">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">برجر باربيكيو</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">85 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">مكونات: برجر لحم مع صوص باربيكيو
+                وجبنة شيدر</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/meat_mushroom.jpg" class="card-img-top" alt="برجر بلوبيري">
+            <div class=" card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">برجر بلوبيري</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">125 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/tranche.jpg" class="card-img-top" alt="كرانشي">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">كرانشي</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">95 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">مكونات: شرائح لحم رفيعة مع خضار مشوية
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/chicken_burger.jpg" class="card-img-top" alt="برجر تشيكن">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">برجر تشيكن</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">85 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">مكونات: برجر فراخ مع خس وطماطم
+                ومايونيز</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/chicken_burger_fried.jpg" class="card-img-top" alt="برجر تشيكن فرايد">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">برجر تشيكن فرايد</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">85 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">مكونات: برجر دجاج مقرمش مع خس وصلصة
+                خاصة</p>
             </div>
           </div>
         </div>
@@ -257,23 +583,143 @@
     <section id="pasta" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2">🍝 باستا</h2>
       <div class="row g-4">
+        <!-- الصورة الأولى -->
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="https://via.placeholder.com/400" class="card-img-top" alt="باستا ألفريدو">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/sweet_shawerma.jpg" class="card-img-top" alt="سويت شيلي">
             <div class="card-body">
-              <h5 class="card-title">باستا ألفريدو</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: مكرونة، صوص كريمي، دجاج مشوي</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سويت شيلي</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
             </div>
           </div>
         </div>
+
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="https://via.placeholder.com/400" class="card-img-top" alt="باستا بولونيز">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/sweet_sour.jpg" class="card-img-top" alt="سويت آند ساور">
             <div class="card-body">
-              <h5 class="card-title">باستا بولونيز</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: مكرونة، صوص طماطم، لحم مفروم</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سويت آند ساور</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">105 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/asiago_bolognese.jpg" class="card-img-top" alt="أسياجتي بولونيز">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">أسياجتي بولونيز</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">75 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/pasta_cordon_bleu.jpg" class="card-img-top" alt="باستا كوردن بلو">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">باستا كوردن بلو</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">105 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/mix_cheese.jpg" class="card-img-top" alt="مكس تشيز">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">مكس تشيز</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">105 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- الصورة الثانية -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/grilled_chicken.jpg" class="card-img-top" alt="نجرسكو">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">نجرسكو</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                مكونات: فراخ مشوية مع مشروم صوص الكريمة
+                والجبنة موتزاريلا
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/meat_cream.jpg" class="card-img-top" alt="الفريدو">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">
+                الفريدو
+              </h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                مكونات: قطع فراخ مشويه مع مشروم وصوص شيدر
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/seafood_mix.jpg" class="card-img-top" alt="سي فوود">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سي فوود</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">130 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                جمبري + كاليماري، + كابوريا مدخنه + وايت صوص + موتزاريلا
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/arabiana.jpg" class="card-img-top" alt="أرابياتا">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">أرابياتا</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">65 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">مكونات: فلفل حار - مشروم - زيتون -
+                صوص الطماطم</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/chicken_curry.jpg" class="card-img-top" alt="تشيكن كاري">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تشيكن كاري</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">مكونات: قطع فراخ مشوية - مشروم - صوص
+                الكريمة - جبنة بارميزان</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/carbonara.jpg" class="card-img-top" alt="كاربونارا">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">كاربونارا</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">95 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">مكونات: لحم مدخن - روزبيف - مشروم -
+                صوص
+                كريمة</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/crispy_teacher.jpg" class="card-img-top" alt="باستا كرسبي">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">باستا كرسبي</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
             </div>
           </div>
         </div>
@@ -285,23 +731,83 @@
     <section id="sandwiches" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2">🥪 ساندويتشات</h2>
       <div class="row g-4">
+        <!-- تشيكن فرايداي -->
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="https://via.placeholder.com/400" class="card-img-top" alt="ساندويتش دجاج">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/chicken_friday.jpg" class="card-img-top" alt="تشيكن فراي داي">
             <div class="card-body">
-              <h5 class="card-title">ساندويتش دجاج</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: دجاج مشوي، خس، طماطم، مايونيز</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تشيكن فرايداي</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                مكونات: قطع الدجاج المشوية مع المشروم والجبنة الموتزاريلا
+              </p>
             </div>
           </div>
         </div>
+
+        <!-- فاهيتا لحم -->
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="https://via.placeholder.com/400" class="card-img-top" alt="ساندويتش لحم">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/beef_fajita.jpg" class="card-img-top" alt="فاهيتا فراخ">
             <div class="card-body">
-              <h5 class="card-title">ساندويتش لحم</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: لحم مشوي، جبنة شيدر، صوص خاص</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">فاهيتا فراخ</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">85 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                مكونات: قطع الفراخ المشوية مع الخضار وصوص الباربيكيو
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- كوردن بلو -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/cordon_bleu.jpg" class="card-img-top" alt="كوردن بلو">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">كوردن بلو</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">95 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                مكونات: صدر دجاج بانيه محشو بلحم بقري مدخن وجبنة موتزاريلا
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- تشيكن كرسبي -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/crispy_chicken.jpg" class="card-img-top" alt="تشيكن كرانشي">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تشيكن كرانشي</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">95 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                مكونات: فراخ مقرمشه مع رومي مدخن وجبنة موتزاريلا
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- تشيكن بانيه -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/chicken_panee.jpg" class="card-img-top" alt="تشيكن بانيه">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تشيكن بانيه</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">85 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                مكونات: قطع البانيه المقرمشة مع المايونيز والخس
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- فاهيتا هوت دوج -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/hotdog_fajita.jpg" class="card-img-top" alt="فاهيتا هوت دوج">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">فاهيتا هوت دوج</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">80 جنيه</p>
             </div>
           </div>
         </div>
@@ -312,13 +818,128 @@
     <section id="lo2met-blueberry" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2">🫓 لقمة بلوبيري</h2>
       <div class="row g-4">
+        <!-- حواوشي -->
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="https://via.placeholder.com/400" class="card-img-top" alt="لقمة بلوبيري">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/shawarma.jpg" class="card-img-top" alt="حواوشي">
             <div class="card-body">
-              <h5 class="card-title">لقمة بلوبيري</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: عجينة محشية بلوبيري وصوص حلو</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">حواوشي</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">60 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- سندوتش سجق -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/sausage_sandwich.jpg" class="card-img-top" alt="سندوتش سجق">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سندوتش سجق</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">55 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- سندوتش كفته -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/liver_sandwich.jpg" class="card-img-top" alt="سندوتش كفته">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سندوتش كفته</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">55 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- سندوتش شيش طاووق -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/chicken_skewer_sandwich.jpg" class="card-img-top" alt="سندوتش شيش طاووق">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سندوتش شيش طاووق</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">75 جنيه</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="#starters" class="mb-5">
+      <h2 class="mb-4 border-bottom border-dark pb-2">مقبلات</h2>
+      <div class="row g-4">
+        <!-- بطاطس -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/fries.jpg" class="card-img-top" alt="بطاطس">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بطاطس</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">30 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- بطاطس موتزاريلا -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/cheese_fries.jpg" class="card-img-top" alt="بطاطس موتزاريلا">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بطاطس موتزاريلا</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">65 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- بطاطس هالابينو -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/jalapeno_fries.jpg" class="card-img-top" alt="بطاطس هالابينو">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بطاطس هالابينو</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">55 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- تشيكن وينجز -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/chicken_wings.jpg" class="card-img-top" alt="تشيكن وينجز">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تشيكن وينجز</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">60 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- موتزاريلا ستيكس -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/mozzarella_sticks.jpg" class="card-img-top" alt="موتزاريلا ستيكس">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">موتزاريلا ستيكس</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">55 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ستريتس -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/streets.jpg" class="card-img-top" alt="ستريتس">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">ستريتس</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">70 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ميكس مقبلات -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/appetizer_mix.jpg" class="card-img-top" alt="ميكس مقبلات">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">ميكس مقبلات</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
             </div>
           </div>
         </div>
@@ -329,23 +950,57 @@
     <section id="salads" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2">🥗 سلطات</h2>
       <div class="row g-4">
+        <!-- تونة سلطة -->
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="https://via.placeholder.com/400" class="card-img-top" alt="سلطة خضار">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/tuna_salad.jpg" class="card-img-top" alt="تونة سلاد">
             <div class="card-body">
-              <h5 class="card-title">سلطة خضار</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: خس، طماطم، خيار، زيت زيتون</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تونة سلاد</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">70 جنيه</p>
             </div>
           </div>
         </div>
+
+        <!-- سيزر سلطة -->
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="https://via.placeholder.com/400" class="card-img-top" alt="سلطة سيزر">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/caesar_salad.jpg" class="card-img-top" alt="سيزر سلاد">
             <div class="card-body">
-              <h5 class="card-title">سلطة سيزر</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: خس، دجاج مشوي، جبنة بارميزان، صوص سيزر</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سيزر سلاد</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">70 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- توميه -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/tomato_salad.jpg" class="card-img-top" alt="توميه">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">توميه</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">25 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- كلوسلو -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/cucumber_salad.jpg" class="card-img-top" alt="كلوسلو">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">كلوسلو</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">35 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- اورينتال -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/carrot_salad.jpg" class="card-img-top" alt="اورينتال">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">اورينتال</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">35 جنيه</p>
             </div>
           </div>
         </div>
@@ -356,23 +1011,77 @@
     <section id="soups" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2">🍲 شوربات</h2>
       <div class="row g-4">
+        <!-- شوربة كريمة فراخ -->
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="https://via.placeholder.com/400" class="card-img-top" alt="شوربة طماطم">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/cream_beef_soup.jpg" class="card-img-top" alt="شوربة كريمة فراخ">
             <div class="card-body">
-              <h5 class="card-title">شوربة طماطم</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: طماطم طازجة، كريمة، أعشاب</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">شوربة كريمة فراخ</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">70 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                مكونات: الفراخ المشويه مع صوص الكريمة
+              </p>
             </div>
           </div>
         </div>
+
+        <!-- شوربة كريمة مشروم -->
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="https://via.placeholder.com/400" class="card-img-top" alt="شوربة كريمة دجاج">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/cream_mushroom_soup.jpg" class="card-img-top" alt="شوربة كريمة مشروم">
             <div class="card-body">
-              <h5 class="card-title">شوربة كريمة دجاج</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: دجاج، كريمة، بصل، جزر</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">شوربة كريمة مشروم</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">50 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                مكونات: المشروم مع صوص الكريمة
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- شوربة سي فود -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/seafood_soup.jpg" class="card-img-top" alt="شوربة سي فود">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">شوربة سي فود</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">105 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- شوربة لسان عصفور -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/orzo_soup.jpg" class="card-img-top" alt="شوربة لسان عصفور">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">شوربة لسان عصفور</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">45 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- شوربة مينستروني -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/minestrone_soup.jpg" class="card-img-top" alt="شوربة مينستروني">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">شوربة مينستروني</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">65 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                مكونات: خضار مع قطع لحم
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- شوربة جمبري -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/shrimp_soup.jpg" class="card-img-top" alt="شوربة جمبري">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">شوربة جمبري</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">105 جنيه</p>
             </div>
           </div>
         </div>
@@ -383,13 +1092,30 @@
     <section id="kids-meal" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2">👶 وجبات أطفال</h2>
       <div class="row g-4">
+        <!-- سنربس (2 قطع) -->
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="https://via.placeholder.com/400" class="card-img-top" alt="وجبة ميني برجر">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/snapper_meal.jpg" class="card-img-top" alt="سنربس (2 قطع)">
             <div class="card-body">
-              <h5 class="card-title">وجبة ميني برجر</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: ميني برجر، بطاطس مقلية، عصير صغير</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">ستريبس</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">70 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                مكونات: قطعتين استريبس + مكرونه وايت او ريد صوص ( حسب الطلب )
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- فرايد تشيكن -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/fried_chicken_meal.jpg" class="card-img-top" alt="فرايد تشيكن">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">فرايد تشيكن</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">70 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                مكونات: بانيه + بطاطس
+              </p>
             </div>
           </div>
         </div>
@@ -400,13 +1126,134 @@
     <section id="fresh" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2">🥤 فريش</h2>
       <div class="row g-4">
+        <!-- مانجو -->
         <div class="col-md-6">
-          <div class="card product-card h-100">
-            <img src="https://via.placeholder.com/400" class="card-img-top" alt="عصير برتقال">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/matkor.jpg" class="card-img-top" alt="مانجو">
             <div class="card-body">
-              <h5 class="card-title">عصير برتقال</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: برتقال طازج</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">مانجو</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">60 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- بلح -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/dates.jpg" class="card-img-top" alt="بلح">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلح</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">50 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- برتقال -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/orange.jpg" class="card-img-top" alt="برتقال">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">برتقال</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">50 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- كيوي -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/kiwi.jpg" class="card-img-top" alt="كيوي">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">كيوي</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">55 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- جوافة -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/guava.jpg" class="card-img-top" alt="جوافة">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">جوافة</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">50 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- فراولة -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/strawberry.jpg" class="card-img-top" alt="فراولة">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">فراولة</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">50 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- أفوكادو -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/avocado.jpg" class="card-img-top" alt="أفوكادو">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">أفوكادو</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">75 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- موز باللبن -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/banana_milk.jpg" class="card-img-top" alt="موز باللبن">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">موز باللبن</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">50 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- بطيخ -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/watermelon.jpg" class="card-img-top" alt="بطيخ">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بطيخ</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">50 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ليمون ناعم -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/smooth_lemon.jpg" class="card-img-top" alt="ليمون ناعم">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">ليمون ناعم</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">60 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- كانتلوب -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/kiwi.jpg" class="card-img-top" alt="كانتلوب">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">كانتلوب</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">50 جنيه</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- جوافة ناعمة -->
+        <div class="col-md-6">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/smooth_guava.jpg" class="card-img-top" alt="جوافة ناعمة">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">جوافة ناعمة</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">50 جنيه</p>
             </div>
           </div>
         </div>
@@ -418,12 +1265,13 @@
       <h2 class="mb-4 border-bottom border-dark pb-2">🍹 كوكتيلات</h2>
       <div class="row g-4">
         <div class="col-md-6">
-          <div class="card product-card h-100">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="https://via.placeholder.com/400" class="card-img-top" alt="كوكتيل فواكه">
             <div class="card-body">
-              <h5 class="card-title">كوكتيل فواكه</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: موز، فراولة، مانجو</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">كوكتيل فواكه</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">XX جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: موز، فراولة،
+                مانجو</p>
             </div>
           </div>
         </div>
@@ -435,12 +1283,13 @@
       <h2 class="mb-4 border-bottom border-dark pb-2">🥤 سموذي</h2>
       <div class="row g-4">
         <div class="col-md-6">
-          <div class="card product-card h-100">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="https://via.placeholder.com/400" class="card-img-top" alt="سموذي مانجو">
             <div class="card-body">
-              <h5 class="card-title">سموذي مانجو</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: مانجو، زبادي، عسل</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سموذي مانجو</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">XX جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: مانجو، زبادي،
+                عسل</p>
             </div>
           </div>
         </div>
@@ -452,12 +1301,13 @@
       <h2 class="mb-4 border-bottom border-dark pb-2">🥛 ميلك شيك</h2>
       <div class="row g-4">
         <div class="col-md-6">
-          <div class="card product-card h-100">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="https://via.placeholder.com/400" class="card-img-top" alt="ميلك شيك فانيليا">
             <div class="card-body">
-              <h5 class="card-title">ميلك شيك فانيليا</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: حليب، آيس كريم فانيليا</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">ميلك شيك فانيليا</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">XX جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: حليب، آيس كريم
+                فانيليا</p>
             </div>
           </div>
         </div>
@@ -469,12 +1319,13 @@
       <h2 class="mb-4 border-bottom border-dark pb-2">🥤 صودا كوكتيل</h2>
       <div class="row g-4">
         <div class="col-md-6">
-          <div class="card product-card h-100">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="https://via.placeholder.com/400" class="card-img-top" alt="صودا فراولة">
             <div class="card-body">
-              <h5 class="card-title">صودا فراولة</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: فراولة، صودا، ثلج</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">صودا فراولة</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">XX جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: فراولة، صودا،
+                ثلج</p>
             </div>
           </div>
         </div>
@@ -486,12 +1337,14 @@
       <h2 class="mb-4 border-bottom border-dark pb-2">☕ آيس كوفي</h2>
       <div class="row g-4">
         <div class="col-md-6">
-          <div class="card product-card h-100">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="https://via.placeholder.com/400" class="card-img-top" alt="آيس كوفي كلاسيك">
             <div class="card-body">
-              <h5 class="card-title">آيس كوفي كلاسيك</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: قهوة، حليب، ثلج</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">آيس كوفي كلاسيك</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">XX جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: قهوة، حليب،
+                ثلج
+              </p>
             </div>
           </div>
         </div>
@@ -503,12 +1356,13 @@
       <h2 class="mb-4 border-bottom border-dark pb-2">☕ مشروبات ساخنة</h2>
       <div class="row g-4">
         <div class="col-md-6">
-          <div class="card product-card h-100">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="https://via.placeholder.com/400" class="card-img-top" alt="قهوة تركي">
             <div class="card-body">
-              <h5 class="card-title">قهوة تركي</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: بن تركي مطحون، ماء</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">قهوة تركي</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">XX جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: بن تركي مطحون،
+                ماء</p>
             </div>
           </div>
         </div>
@@ -520,12 +1374,14 @@
       <h2 class="mb-4 border-bottom border-dark pb-2">🍰 حلويات</h2>
       <div class="row g-4">
         <div class="col-md-6">
-          <div class="card product-card h-100">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="https://via.placeholder.com/400" class="card-img-top" alt="تشيز كيك">
             <div class="card-body">
-              <h5 class="card-title">تشيز كيك</h5>
-              <p class="card-text">XX جنيه</p>
-              <p class="card-text"><small>مكونات: بسكويت، جبنة كريمية، صوص فواكه</small></p>
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تشيز كيك</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">XX جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">المكونات: بسكويت، جبنة كريمية،
+                صوص
+                فواكه</p>
             </div>
           </div>
         </div>
@@ -551,18 +1407,6 @@
       </p>
     </div>
   </footer>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   <script src="js/bootstrap.bundle.min.js"></script>
