@@ -4,6 +4,19 @@ body {
   scroll-behavior: smooth;
 }
 
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 193, 7, 0.2);
+  border-radius: 8px;
+  color: #ffc107;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #ffc107;
+  color: #0d1b2a !important;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
 .product-card {
   padding: 10px;
 }
@@ -78,6 +91,19 @@ footer a:hover {
 }
 section {
   scroll-margin-top: 90px;
+}
+
+.section-title {
+  position: sticky;
+  top: 70px;
+  display: inline-block;
+  background: rgb(27, 38, 59);
+  color: #ffc107;
+  padding: 6px 14px;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 
 #splash-screen {
