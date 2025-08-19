@@ -10,20 +10,12 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
   <title>Blueberry Menu</title>
-  <style>
-    /* Scroll داخل الـ dropdown في أي شاشة */
-    .dropdown-menu {
-      max-height: 70vh;
-      overflow-y: auto;
-    }
-  </style>
 </head>
 
 <body>
 
-
+  <!-- Splash Screen -->
   <div id="splash-screen">
     <div class="splash-content">
       <img src="images/487214272_1139355878202047_7481455106585690725_n.jpg" alt="Logo" class="splash-logo">
@@ -33,11 +25,16 @@
     </div>
   </div>
 
+  <!-- Back To Top -->
+  <button id="backToTop" title="رجوع للأعلى">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-blueberry fixed-top shadow">
     <div class="container">
       <a class="navbar-brand fw-bold text-center fs-3 text-white" href="#">
-        <span style="font-family: 'Cairo', sans-serif; letter-spacing: 1px;">بلوبيري</span>
+        🫐 <span style="font-family: 'Cairo', sans-serif; letter-spacing: 1px;">بلوبيري</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -71,7 +68,6 @@
               <li><a class="dropdown-item" href="#ice-coffee">آيس كوفي</a></li>
               <li><a class="dropdown-item" href="#hot">مشروبات ساخنة</a></li>
               <li><a class="dropdown-item" href="#dessert">حلويات</a></li>
-              <li><a class="dropdown-item" href="#bottled-drinks">مياه ومشروبات معبأة</a></li>
             </ul>
           </li>
 
@@ -243,7 +239,6 @@
       </div>
     </section>
 
-
     <section id="italian-pizza" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🍕 بيتزا إيطالي</h2>
       <div class="row g-4">
@@ -401,7 +396,6 @@
       </div>
     </section>
 
-
     <section id="main-bowls" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🥘 أطباق رئيسية</h2>
       <div class="row g-4">
@@ -488,7 +482,6 @@
         </div>
       </div>
     </section>
-
 
     <section id="burger" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🍔 برجر</h2>
@@ -577,7 +570,6 @@
         </div>
       </div>
     </section>
-
 
     <section id="pasta" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🍝 باستا</h2>
@@ -725,12 +717,9 @@
       </div>
     </section>
 
-
-
     <section id="sandwiches" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🥪 ساندويتشات</h2>
       <div class="row g-4">
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/chicken_friday.jpg" class="card-img-top" alt="تشيكن فراي داي">
@@ -743,7 +732,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -758,7 +746,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/cordon_bleu.jpg" class="card-img-top" alt="كوردن بلو">
@@ -771,7 +758,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -786,7 +772,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/Products/تشيكن بانيه.jpg" class="card-img-top" alt="تشيكن بانيه">
@@ -800,7 +785,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/hotdog_fajita.jpg" class="card-img-top" alt="فاهيتا هوت دوج">
@@ -813,11 +797,9 @@
       </div>
     </section>
 
-
     <section id="lo2met-blueberry" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🫓 لقمة بلوبيري</h2>
       <div class="row g-4">
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/shawarma.jpg" class="card-img-top" alt="حواوشي">
@@ -827,7 +809,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -839,7 +820,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/liver_sandwich.jpg" class="card-img-top" alt="سندوتش كفته">
@@ -849,7 +829,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -866,7 +845,6 @@
     <section id="#starters" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">مقبلات</h2>
       <div class="row g-4">
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/fries.jpg" class="card-img-top" alt="بطاطس">
@@ -876,7 +854,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -888,7 +865,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/jalapeno_fries.jpg" class="card-img-top" alt="بطاطس هالابينو">
@@ -898,7 +874,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -910,7 +885,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/mozzarella_sticks.jpg" class="card-img-top" alt="موتزاريلا ستيكس">
@@ -921,7 +895,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/streets.jpg" class="card-img-top" alt="ستريتس">
@@ -931,7 +904,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -945,11 +917,9 @@
       </div>
     </section>
 
-
     <section id="salads" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🥗 سلطات</h2>
       <div class="row g-4">
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/tuna_salad.jpg" class="card-img-top" alt="تونة سلاد">
@@ -959,7 +929,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -971,7 +940,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/tomato_salad.jpg" class="card-img-top" alt="توميه">
@@ -982,7 +950,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/cucumber_salad.jpg" class="card-img-top" alt="كلوسلو">
@@ -992,7 +959,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -1006,11 +972,9 @@
       </div>
     </section>
 
-
     <section id="soups" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🍲 شوربات</h2>
       <div class="row g-4">
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/cream_beef_soup.jpg" class="card-img-top" alt="شوربة كريمة فراخ">
@@ -1023,7 +987,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -1038,7 +1001,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/seafood_soup.jpg" class="card-img-top" alt="شوربة سي فود">
@@ -1049,7 +1011,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/orzo_soup.jpg" class="card-img-top" alt="شوربة لسان عصفور">
@@ -1059,7 +1020,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -1074,7 +1034,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/shrimp_soup.jpg" class="card-img-top" alt="شوربة جمبري">
@@ -1087,11 +1046,9 @@
       </div>
     </section>
 
-
     <section id="kids-meal" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">👶 وجبات أطفال</h2>
       <div class="row g-4">
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/Products/ستربس 2.jpg" class="card-img-top" alt="سنربس (2 قطع)">
@@ -1104,7 +1061,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -1121,11 +1077,9 @@
       </div>
     </section>
 
-
     <section id="fresh" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🥤 فريش</h2>
       <div class="row g-4">
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/matkor.jpg" class="card-img-top" alt="مانجو">
@@ -1136,6 +1090,15 @@
           </div>
         </div>
 
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/matkor.jpg" class="card-img-top" alt="تفاح">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تفاح</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">60 جنيه</p>
+            </div>
+          </div>
+        </div>
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -1147,7 +1110,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/orange.jpg" class="card-img-top" alt="برتقال">
@@ -1157,7 +1119,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -1169,7 +1130,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/guava.jpg" class="card-img-top" alt="جوافة">
@@ -1179,7 +1139,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -1191,7 +1150,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/avocado.jpg" class="card-img-top" alt="أفوكادو">
@@ -1201,7 +1159,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -1213,7 +1170,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/watermelon.jpg" class="card-img-top" alt="بطيخ">
@@ -1223,7 +1179,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -1235,7 +1190,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/kiwi.jpg" class="card-img-top" alt="كانتلوب">
@@ -1245,7 +1199,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -1259,103 +1212,100 @@
       </div>
     </section>
 
-
     <section id="cocktails" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🍹 كوكتيلات</h2>
       <div class="row g-4">
-        <div class="row">
-
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/Products/بلوبيري.jpg" class="card-img-top" alt="بلوبيري">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">بلوبيري</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">65 جنيه</p>
-                <p class="ingredients mb-0 mt-2" style="color: #d1d1d1; font-size: 0.9rem;">
-                  موز + ايس كريم + توت ازرق
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/mango_mix.jpg" class="card-img-top" alt="كرنفال">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">كرنفال</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">65 جنيه</p>
-                <p class="ingredients mb-0 mt-2" style="color: #d1d1d1; font-size: 0.9rem;">
-                  مانجو + كانتالوب + موز + ايس كريم
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/fruit_basket.jpg" class="card-img-top" alt="فروت باسكت">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">فروت باسكت</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">65 جنيه</p>
-                <p class="ingredients mb-0 mt-2" style="color: #d1d1d1; font-size: 0.9rem;">
-                  مانجو + فراولة + موز + ايس كريم
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/mango_fixed.jpg" class="card-img-top" alt="مانجو لايت">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">مانجو لايت</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">65 جنيه</p>
-                <p class="ingredients mb-0 mt-2" style="color: #d1d1d1; font-size: 0.9rem;">
-                  مانجو + زبادي + نعناع طازج
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/pina_colada.jpg" class="card-img-top" alt="بينا كولادا">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">بينا كولادا</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">60 جنيه</p>
-                <p class="ingredients mb-0 mt-2" style="color: #d1d1d1; font-size: 0.9rem;">
-                  جوز هند + أناناس + برتقال
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/tropical.jpg" class="card-img-top" alt="تروبيكال">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">تروبيكال</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">65 جنيه</p>
-                <p class="ingredients mb-0 mt-2" style="color: #d1d1d1; font-size: 0.9rem;">
-                  أناناس + خوخ + كيوي + برتقال
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/power_drink.jpg" class="card-img-top" alt="باور درينك">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">باور درينك</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">85 جنيه</p>
-                <p class="ingredients mb-0 mt-2" style="color: #d1d1d1; font-size: 0.9rem;">
-                  أفوكادو + ايس كريم + كيوي + مانجو
-                </p>
-              </div>
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/Products/بلوبيري.jpg" class="card-img-top" alt="بلوبيري">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">بلوبيري</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">65 جنيه</p>
+              <p class="ingredients mb-0 mt-2" style="color: #d1d1d1; font-size: 0.9rem;">
+                موز + ايس كريم + توت ازرق
+              </p>
             </div>
           </div>
         </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/mango_mix.jpg" class="card-img-top" alt="كرنفال">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">كرنفال</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">65 جنيه</p>
+              <p class="ingredients mb-0 mt-2" style="color: #d1d1d1; font-size: 0.9rem;">
+                مانجو + كانتالوب + موز + ايس كريم
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/fruit_basket.jpg" class="card-img-top" alt="فروت باسكت">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">فروت باسكت</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">65 جنيه</p>
+              <p class="ingredients mb-0 mt-2" style="color: #d1d1d1; font-size: 0.9rem;">
+                مانجو + فراولة + موز + ايس كريم
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/mango_fixed.jpg" class="card-img-top" alt="مانجو لايت">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">مانجو لايت</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">65 جنيه</p>
+              <p class="ingredients mb-0 mt-2" style="color: #d1d1d1; font-size: 0.9rem;">
+                مانجو + زبادي + نعناع طازج
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/pina_colada.jpg" class="card-img-top" alt="بينا كولادا">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">بينا كولادا</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">60 جنيه</p>
+              <p class="ingredients mb-0 mt-2" style="color: #d1d1d1; font-size: 0.9rem;">
+                جوز هند + أناناس + برتقال
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/tropical.jpg" class="card-img-top" alt="تروبيكال">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">تروبيكال</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">65 جنيه</p>
+              <p class="ingredients mb-0 mt-2" style="color: #d1d1d1; font-size: 0.9rem;">
+                أناناس + خوخ + كيوي + برتقال
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/power_drink.jpg" class="card-img-top" alt="باور درينك">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">باور درينك</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">85 جنيه</p>
+              <p class="ingredients mb-0 mt-2" style="color: #d1d1d1; font-size: 0.9rem;">
+                أفوكادو + ايس كريم + كيوي + مانجو
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -1363,105 +1313,102 @@
     <section id="smoothies" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🥤 سموذي</h2>
       <div class="row g-4">
-        <div class="row">
-
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/Products/بلوبيري سموزي.jpg" class="card-img-top" alt="بلوبيري">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">بلوبيري</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">65 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/Products/بلوبيري سموزي.jpg" class="card-img-top" alt="بلوبيري">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">بلوبيري</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">65 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/mango_passion.jpg" class="card-img-top" alt="مانجو باشون فروت">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">مانجو باشون فروت</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">60 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/mango_passion.jpg" class="card-img-top" alt="مانجو باشون فروت">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">مانجو باشون فروت</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">60 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/kiwi_pineapple.jpg" class="card-img-top" alt="كيوي أناناس">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">كيوي أناناس</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">60 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/kiwi_pineapple.jpg" class="card-img-top" alt="كيوي أناناس">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">كيوي أناناس</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">60 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/watermelon_mango.jpg" class="card-img-top" alt="بطيخ مانجو">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">بطيخ مانجو</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">60 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/watermelon_mango.jpg" class="card-img-top" alt="بطيخ مانجو">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">بطيخ مانجو</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">60 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/lemon_mint.jpg" class="card-img-top" alt="ليمون نعناع">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">ليمون نعناع</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">55 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/lemon_mint.jpg" class="card-img-top" alt="ليمون نعناع">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">ليمون نعناع</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">55 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/mango_kiwi.jpg" class="card-img-top" alt="مانجو كيوي">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">مانجو كيوي</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">65 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/mango_kiwi.jpg" class="card-img-top" alt="مانجو كيوي">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">مانجو كيوي</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">65 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/mango.jpg" class="card-img-top" alt="مانجو">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">مانجو</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">60 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/mango.jpg" class="card-img-top" alt="مانجو">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">مانجو</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">60 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/strawberry.jpg" class="card-img-top" alt="فراولة">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">فراولة</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">60 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/strawberry.jpg" class="card-img-top" alt="فراولة">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">فراولة</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">60 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/kiwi.jpg" class="card-img-top" alt="كيوي">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">كيوي</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">60 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/kiwi.jpg" class="card-img-top" alt="كيوي">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">كيوي</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">60 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/watermelon.jpg" class="card-img-top" alt="بطيخ">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">بطيخ</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">55 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/watermelon.jpg" class="card-img-top" alt="بطيخ">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">بطيخ</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">55 جنيه</p>
             </div>
           </div>
         </div>
@@ -1472,125 +1419,122 @@
     <section id="milkshake" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🥛 ميلك شيك</h2>
       <div class="row g-4">
-        <div class="row">
-
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/Products/ميكس شوكليت.jpg" class="card-img-top" alt="ميكس شوكليت">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">ميكس شوكليت</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">135 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/Products/ميكس شوكليت.jpg" class="card-img-top" alt="ميكس شوكليت">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">ميكس شوكليت</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">135 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/ganache.jpg" class="card-img-top" alt="فانليا">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">فانليا</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/ganache.jpg" class="card-img-top" alt="فانليا">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">فانليا</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/chocolate.jpg" class="card-img-top" alt="شوكليت">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">شوكليت</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/chocolate.jpg" class="card-img-top" alt="شوكليت">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">شوكليت</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/mango_dessert.jpg" class="card-img-top" alt="مانجو">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">مانجو</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">95 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/mango_dessert.jpg" class="card-img-top" alt="مانجو">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">مانجو</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">95 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/strawberry_chocolate.jpg" class="card-img-top" alt="فراولة">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">فراولة</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/strawberry_chocolate.jpg" class="card-img-top" alt="فراولة">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">فراولة</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/brownie.jpg" class="card-img-top" alt="اوريو">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">اوريو</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/brownie.jpg" class="card-img-top" alt="اوريو">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">اوريو</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/kitkat.jpg" class="card-img-top" alt="كيت كات">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">كيت كات</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/kitkat.jpg" class="card-img-top" alt="كيت كات">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">كيت كات</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/pistachio.jpg" class="card-img-top" alt="بستاشيو">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">بستاشيو</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">110 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/pistachio.jpg" class="card-img-top" alt="بستاشيو">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">بستاشيو</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">110 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/hazelnut.jpg" class="card-img-top" alt="هوهوز">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">هوهوز</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/hazelnut.jpg" class="card-img-top" alt="هوهوز">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">هوهوز</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/topping.jpg" class="card-img-top" alt="توينكز">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">توينكز</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/topping.jpg" class="card-img-top" alt="توينكز">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">توينكز</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/snickers.jpg" class="card-img-top" alt="سنيكرز">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">سنيكرز</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/snickers.jpg" class="card-img-top" alt="سنيكرز">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">سنيكرز</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-            <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-              <img src="images/lotus.jpg" class="card-img-top" alt="لوتس">
-              <div class="card-body text-center">
-                <h5 class="card-title fw-bold mb-2">لوتس</h5>
-                <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
-              </div>
+        <div class="col-md-4 mb-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/lotus.jpg" class="card-img-top" alt="لوتس">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold mb-2">لوتس</h5>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
             </div>
           </div>
         </div>

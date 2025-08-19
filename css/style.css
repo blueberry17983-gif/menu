@@ -17,6 +17,11 @@ body {
   font-weight: bold;
 }
 
+.dropdown-menu {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
 .product-card {
   padding: 10px;
 }
@@ -162,4 +167,29 @@ section {
     transform: scale(1);
     opacity: 1;
   }
+}
+
+/* Back To Top */
+#backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#backToTop:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
 }
