@@ -193,3 +193,149 @@ section {
   background-color: #0056b3;
   transform: scale(1.1);
 }
+
+/* Cart Icon */
+.cart-icon {
+  cursor: pointer;
+  color: #fff;
+}
+.cart-icon:hover {
+  color: #ffc107;
+}
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #dc3545;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
+  line-height: 1;
+}
+
+/* Add Buttun */
+.btn-add-to-cart {
+  background-color: #ffc107;
+  color: #212529;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.btn-add-to-cart i {
+  font-size: 14px;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #e0a800;
+}
+
+.btn-danger {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+}
+
+/* الخلفية الشفافة */
+.cart-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* الصندوق الداخلي */
+.cart-popup-content {
+  background: #f9f9f9;
+  width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* زر الإغلاق */
+.close-popup {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #444;
+}
+
+.popup-title {
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+}
+
+/* كل منتج */
+.cart-item {
+  padding: 15px 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* اسم المنتج */
+.cart-item h6 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #222;
+}
+
+/* السطر اللي فيه السعر + الكمية + الإجمالي */
+.cart-item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* الكمية */
+.qty-control button {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+.qty-control span {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+/* الإجمالي */
+.cart-item-details span {
+  font-size: 14px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
