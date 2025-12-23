@@ -303,10 +303,12 @@ section {
 }
 
 .carousel-inner img {
-  border-radius: 15px;
-  object-fit: cover;
-  height: 400px; /* يمكن تعديل الارتفاع حسب احتياجك */
+  width: 100%;
+  height: 300px; /* ممكن تغير الارتفاع حسب ما تحب */
+  object-fit: cover; /* مهم جدًا: يخلي الصورة تغطي المساحة بالكامل بدون تشويه */
+  border-radius: 15px; /* حواف مدورة */
 }
+
 
 .contact-us:hover {
   text-decoration: underline;
