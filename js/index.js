@@ -101,43 +101,6 @@ function animate() {
 
 animate();
 
-// Handle resize
-window.addEventListener("resize", () => {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-});
-
-
-// Slider
-const slides = document.querySelector(".slides");
-const images = slides.querySelectorAll("img");
-const prev = document.querySelector(".prev");
-const next = document.querySelector(".next");
-
-let currentIndex = 0;
-let slideCount = images.length;
-
-// Function to show slide
-function showSlide(index) {
-  if(index >= slideCount) currentIndex = 0;
-  else if(index < 0) currentIndex = slideCount - 1;
-  else currentIndex = index;
-
-  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-
-// Navigation
-next.addEventListener("click", () => showSlide(currentIndex + 1));
-prev.addEventListener("click", () => showSlide(currentIndex - 1));
-
-// Auto Slide every 3 seconds
-let autoSlide = setInterval(() => showSlide(currentIndex + 1), 3000);
-
-// Pause on hover or touch
-slides.addEventListener("mouseenter", () => clearInterval(autoSlide));
-slides.addEventListener("mouseleave", () => autoSlide = setInterval(() => showSlide(currentIndex + 1), 3000));
-slides.addEventListener("touchstart", () => clearInterval(autoSlide));
-slides.addEventListener("touchend", () => autoSlide = setInterval(() => showSlide(currentIndex + 1), 3000));
 
 
 
