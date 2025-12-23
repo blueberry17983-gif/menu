@@ -4,6 +4,25 @@ body {
   scroll-behavior: smooth;
 }
 
+.santa-hat {
+  position: absolute;
+  top: -3px; /* فوق الحرف */
+  left: -9px; /* جنب أول حرف */
+  width: 20px;
+  height: auto;
+  transform-origin: bottom center; /* نقطة الدوران */
+  animation: swing 2s ease-in-out infinite alternate; /* حركة تأرجح */
+  pointer-events: none;
+}
+
+/* الحركة */
+@keyframes swing {
+  0% { transform: rotate(-20deg) translateY(0); }
+  50% { transform: rotate(0deg) translateY(-2px); }
+  100% { transform: rotate(20deg) translateY(0); }
+}
+
+
 .navbar-nav .nav-link:hover {
   background-color: rgba(255, 193, 7, 0.2);
   border-radius: 8px;
