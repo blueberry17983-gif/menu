@@ -5,22 +5,23 @@ body {
 }
 
 .santa-hat {
-  position: absolute;
-  top: -3px; /* فوق الحرف */
-  left: -9px; /* جنب أول حرف */
-  width: 20px;
-  height: auto;
-  transform-origin: bottom center; /* نقطة الدوران */
-  animation: swing 2s ease-in-out infinite alternate; /* حركة تأرجح */
+  top: -25%; /* فوق الحرف */
+  left: -10%; /* جنب أول حرف */
+  width: 20%; /* حجم نسبي للشعار */
+  transform-origin: bottom center;
+  animation: swing 2s ease-in-out infinite alternate;
   pointer-events: none;
 }
 
-/* الحركة */
+/* حركة التأرجح */
 @keyframes swing {
   0% { transform: rotate(-20deg) translateY(0); }
   50% { transform: rotate(0deg) translateY(-2px); }
   100% { transform: rotate(20deg) translateY(0); }
 }
+
+/* Bootstrap Media Queries مضمنة تلقائياً مع img-fluid */
+
 
 
 .navbar-nav .nav-link:hover {
