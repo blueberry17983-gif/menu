@@ -1,9 +1,14 @@
 // Hide splash screen after 4 seconds
 setTimeout(() => {
   const splash = document.getElementById("splash-screen");
+  if (!splash) return;
+
   splash.style.animation = "fadeOut 1s ease forwards";
-  setTimeout(() => { splash.style.display = "none"; }, 1000);
+  setTimeout(() => {
+    splash.style.display = "none";
+  }, 1000);
 }, 4000);
+
 
 // Fireworks effect
 const canvas = document.getElementById("fireworks");
@@ -136,6 +141,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
   const btn = document.getElementById("backToTop");
+  if (!btn) return;
+
   if (
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
@@ -145,6 +152,7 @@ function scrollFunction() {
     btn.style.display = "none";
   }
 }
+
 
 document.getElementById("backToTop").addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
