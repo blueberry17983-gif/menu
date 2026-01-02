@@ -10,101 +10,103 @@ setTimeout(() => {
 }, 4000);
 
 
+/* NewYearCode
 // Fireworks effect
-const canvas = document.getElementById("fireworks");
-const ctx = canvas.getContext("2d");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+// const canvas = document.getElementById("fireworks");
+// const ctx = canvas.getContext("2d");
+// canvas.width = window.innerWidth;
+// canvas.height = window.innerHeight;
 
-const fireworks = [];
-const particles = [];
+// const fireworks = [];
+// const particles = [];
 
-function random(min, max) {
-  return Math.random() * (max - min) + min;
-}
+// function random(min, max) {
+//   return Math.random() * (max - min) + min;
+// }
 
-class Firework {
-  constructor() {
-    this.x = random(0, canvas.width);
-    this.y = canvas.height;
-    this.targetY = random(100, canvas.height / 2);
-    this.speed = random(3, 6);
-    this.exploded = false;
-  }
-  update() {
-    if (!this.exploded) {
-      this.y -= this.speed;
-      if (this.y <= this.targetY) {
-        this.explode();
-        this.exploded = true;
-      }
-    }
-  }
-  explode() {
-    const particleCount = 30;
-    for (let i = 0; i < particleCount; i++) {
-      particles.push(new Particle(this.x, this.y));
-    }
-  }
-  draw() {
-    if (!this.exploded) {
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, 3, 0, Math.PI * 2);
-      ctx.fillStyle = "white";
-      ctx.fill();
-    }
-  }
-}
+// class Firework {
+//   constructor() {
+//     this.x = random(0, canvas.width);
+//     this.y = canvas.height;
+//     this.targetY = random(100, canvas.height / 2);
+//     this.speed = random(3, 6);
+//     this.exploded = false;
+//   }
+//   update() {
+//     if (!this.exploded) {
+//       this.y -= this.speed;
+//       if (this.y <= this.targetY) {
+//         this.explode();
+//         this.exploded = true;
+//       }
+//     }
+//   }
+//   explode() {
+//     const particleCount = 30;
+//     for (let i = 0; i < particleCount; i++) {
+//       particles.push(new Particle(this.x, this.y));
+//     }
+//   }
+//   draw() {
+//     if (!this.exploded) {
+//       ctx.beginPath();
+//       ctx.arc(this.x, this.y, 3, 0, Math.PI * 2);
+//       ctx.fillStyle = "white";
+//       ctx.fill();
+//     }
+//   }
+// }
 
-class Particle {
-  constructor(x, y) {
-    this.x = x;
-    this.y = y;
-    this.speedX = random(-4, 4);
-    this.speedY = random(-4, 4);
-    this.alpha = 1;
-    this.color = `hsl(${random(0, 360)}, 100%, 50%)`;
-  }
-  update() {
-    this.x += this.speedX;
-    this.y += this.speedY;
-    this.alpha -= 0.02;
-  }
-  draw() {
-    ctx.save();
-    ctx.globalAlpha = this.alpha;
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, 3, 0, Math.PI * 2);
-    ctx.fillStyle = this.color;
-    ctx.fill();
-    ctx.restore();
-  }
-}
+// class Particle {
+//   constructor(x, y) {
+//     this.x = x;
+//     this.y = y;
+//     this.speedX = random(-4, 4);
+//     this.speedY = random(-4, 4);
+//     this.alpha = 1;
+//     this.color = `hsl(${random(0, 360)}, 100%, 50%)`;
+//   }
+//   update() {
+//     this.x += this.speedX;
+//     this.y += this.speedY;
+//     this.alpha -= 0.02;
+//   }
+//   draw() {
+//     ctx.save();
+//     ctx.globalAlpha = this.alpha;
+//     ctx.beginPath();
+//     ctx.arc(this.x, this.y, 3, 0, Math.PI * 2);
+//     ctx.fillStyle = this.color;
+//     ctx.fill();
+//     ctx.restore();
+//   }
+// }
 
-function animate() {
-  ctx.fillStyle = "rgba(0,0,0,0.1)";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+// function animate() {
+//   ctx.fillStyle = "rgba(0,0,0,0.1)";
+//   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  if (Math.random() < 0.05) {
-    fireworks.push(new Firework());
-  }
+//   if (Math.random() < 0.05) {
+//     fireworks.push(new Firework());
+//   }
 
-  fireworks.forEach((fw, i) => {
-    fw.update();
-    fw.draw();
-    if (fw.exploded) fireworks.splice(i, 1);
-  });
+//   fireworks.forEach((fw, i) => {
+//     fw.update();
+//     fw.draw();
+//     if (fw.exploded) fireworks.splice(i, 1);
+//   });
 
-  particles.forEach((p, i) => {
-    p.update();
-    p.draw();
-    if (p.alpha <= 0) particles.splice(i, 1);
-  });
+//   particles.forEach((p, i) => {
+//     p.update();
+//     p.draw();
+//     if (p.alpha <= 0) particles.splice(i, 1);
+//   });
 
-  requestAnimationFrame(animate);
-}
+//   requestAnimationFrame(animate);
+// }
 
-animate();
+// animate();
+*/
 
 
 
