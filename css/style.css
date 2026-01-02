@@ -4,21 +4,20 @@ body {
   scroll-behavior: smooth;
 }
 
-.santa-hat {
-  top: -25%; /* فوق الحرف */
-  left: -10%; /* جنب أول حرف */
-  width: 20%; /* حجم نسبي للشعار */
+/* .santa-hat {
+  top: -25%; 
+  left: -10%;
+  width: 20%;
   transform-origin: bottom center;
   animation: swing 2s ease-in-out infinite alternate;
   pointer-events: none;
 }
 
-/* حركة التأرجح */
 @keyframes swing {
   0% { transform: rotate(-20deg) translateY(0); }
   50% { transform: rotate(0deg) translateY(-2px); }
   100% { transform: rotate(20deg) translateY(0); }
-}
+} */
 
 /* Bootstrap Media Queries مضمنة تلقائياً مع img-fluid */
 
