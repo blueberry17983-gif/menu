@@ -9,6 +9,49 @@ setTimeout(() => {
   }, 1000);
 }, 4000);
 
+// Floating Cash
+const openBtn = document.getElementById("openPayment");
+const closeBtn = document.getElementById("closePayment");
+const popupCash = document.getElementById("paymentPopup");
+const overlay = document.getElementById("paymentOverlay");
+const methods = document.querySelectorAll(".payment-method");
+const resultBox = document.getElementById("paymentResult");
+const numberText = document.getElementById("paymentNumber");
+const copyBtn = document.getElementById("copyNumber");
+const copyMsg = document.getElementById("copyMsg");
+
+openBtn.onclick = () => {
+  popupCash.classList.add("active");
+  overlay.classList.add("active");
+};
+
+methods.forEach(method => {
+  method.addEventListener("click", () => {
+    const number = method.dataset.number;
+
+    numberText.textContent = number;
+    resultBox.style.display = "block";
+    copyMsg.style.display = "none";
+  });
+});
+
+copyBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText(numberText.textContent);
+  copyMsg.style.display = "block";
+});
+
+
+function closePopup() {
+  popupCash.classList.remove("active");
+  overlay.classList.remove("active");
+}
+
+closeBtn.onclick = closePopup;
+overlay.onclick = closePopup;
+
+
+
+
 
 /* NewYearCode
 // Fireworks effect

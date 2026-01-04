@@ -44,6 +44,46 @@
     <i class="fas fa-arrow-up"></i>
   </button>
 
+  <!-- Floating Payment Icon -->
+  <div class="payment-float" id="openPayment">
+    <i class="fa-solid fa-wallet"></i>
+  </div>
+
+  <!-- Overlay -->
+  <div class="payment-overlay" id="paymentOverlay"></div>
+
+  <!-- Popup -->
+  <div class="payment-popup" id="paymentPopup">
+    <button class="payment-close" id="closePayment">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <h4 class="payment-title">طرق الدفع المتاحة</h4>
+
+    <div class="payment-method vodafone" data-number="01006067349">
+      <i class="fa-solid fa-mobile-screen"></i>
+      <span>Vodafone Cash</span>
+    </div>
+
+    <div class="payment-method instapay" data-number="01006067349">
+      <i class="fa-solid fa-qrcode"></i>
+      <span>InstaPay</span>
+    </div>
+
+    <!-- Number Box -->
+    <div class="payment-result" id="paymentResult">
+      <p>رقم التحويل</p>
+      <div class="number-row">
+        <span id="paymentNumber">01006067349</span>
+        <button id="copyNumber">
+          <i class="fa-solid fa-copy"></i>
+        </button>
+      </div>
+      <small id="copyMsg">تم النسخ ✅</small>
+    </div>
+
+  </div>
+
+
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-blueberry fixed-top shadow">
     <div class="container">
@@ -60,8 +100,6 @@
           <img src="images/logo/hat.png" alt="Santa Hat" class="santa-hat img-fluid position-absolute">
         </span>
       </a> -->
-
-
 
       <div class="flex-grow-1"></div>
 
