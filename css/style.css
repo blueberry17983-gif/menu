@@ -26,7 +26,7 @@ body {
 } */
 
 /* Floating Icon */
-.payment-float {
+/* .payment-float {
   position: fixed;
   bottom: 60%;
   left: 20px;
@@ -48,7 +48,6 @@ body {
   transform: scale(1.1);
 }
 
-/* Overlay */
 .payment-overlay {
   position: fixed;
   inset: 0;
@@ -63,7 +62,6 @@ body {
   visibility: visible;
 }
 
-/* Popup */
 .payment-popup {
   background: #f9fafb;
   color: #1f2937;
@@ -93,7 +91,6 @@ body {
   font-weight: 600;
 }
 
-/* Close */
 .payment-close {
   position: absolute;
   top: 14px;
@@ -104,7 +101,6 @@ body {
   cursor: pointer;
 }
 
-/* Payment Method */
 .payment-method {
   display: flex;
   align-items: center;
@@ -123,7 +119,6 @@ body {
   font-size: 20px;
 }
 
-/* Vodafone */
 .payment-method.vodafone {
   border: 2px solid #e60000;
   color: #e60000;
@@ -134,7 +129,6 @@ body {
   box-shadow: 0 10px 25px rgba(230, 0, 0, 0.4);
 }
 
-/* InstaPay */
 .payment-method.instapay {
   border: 2px solid #5b2d8b;
   color: #5b2d8b;
@@ -191,6 +185,197 @@ body {
   margin-top: 8px;
   font-size: 12px;
   color: #22c55e;
+} */
+
+/* Floating Button */
+.payment-float {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #facc15, #f59e0b);
+  /* background: linear-gradient(135deg, #22c55e, #16a34a); */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Overlay */
+.payment-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 1001;
+}
+
+.payment-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Popup */
+.payment-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: #f9fafb;
+  width: 90%;
+  max-width: 360px;
+  border-radius: 18px;
+  padding: 22px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  z-index: 1002;
+}
+
+.payment-popup.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Close */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Methods */
+.methods {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.method {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #fff;
+}
+
+.method i {
+  font-size: 20px;
+}
+
+/* Vodafone */
+.method.vodafone {
+  border: 2px solid #e60000;
+  color: #e60000;
+}
+
+.method.vodafone:hover {
+  background: #e60000;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(230, 0, 0, 0.35);
+}
+
+/* InstaPay */
+.method.instapay {
+  border: 2px solid #5b2d8b;
+  color: #5b2d8b;
+}
+
+.method.instapay:hover {
+  background: linear-gradient(135deg, #5b2d8b, #8e44ad);
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(142, 68, 173, 0.35);
+}
+
+/* Details */
+.payment-details {
+  margin-top: 18px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px;
+  display: none;
+  animation: fadeUp 0.3s ease;
+}
+
+.payment-details p {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+/* Toast */
+.toast {
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #16a34a;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.copy-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  margin-top: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.copy-row:hover {
+  background: #f3f4f6;
+}
+
+.copy-row i {
+  font-size: 16px;
+  opacity: 0.5;
+  transition: 0.25s ease;
+}
+
+.copy-row:hover i {
+  opacity: 1;
 }
 
 /* Bootstrap Media Queries مضمنة تلقائياً مع img-fluid */

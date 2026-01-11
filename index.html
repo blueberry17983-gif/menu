@@ -45,14 +45,12 @@
   </button>
 
   <!-- Floating Payment Icon -->
-  <div class="payment-float" id="openPayment">
+  <!-- <div class="payment-float" id="openPayment">
     <i class="fa-solid fa-wallet"></i>
   </div>
 
-  <!-- Overlay -->
   <div class="payment-overlay" id="paymentOverlay"></div>
 
-  <!-- Popup -->
   <div class="payment-popup" id="paymentPopup">
     <button class="payment-close" id="closePayment">
       <i class="fa-solid fa-xmark"></i>
@@ -69,7 +67,6 @@
       <span>InstaPay</span>
     </div>
 
-    <!-- Number Box -->
     <div class="payment-result" id="paymentResult">
       <p>رقم التحويل</p>
       <div class="number-row">
@@ -81,7 +78,47 @@
       <small id="copyMsg">تم النسخ ✅</small>
     </div>
 
+  </div> -->
+
+  <!-- Floating Payment Button -->
+<div class="payment-float" id="openPayment">
+  <i class="fa-solid fa-wallet"></i>
+</div>
+
+<!-- Overlay -->
+<div class="payment-overlay" id="paymentOverlay"></div>
+
+<!-- Popup -->
+<div class="payment-popup" id="paymentPopup">
+  <button class="close-btn" id="closePayment">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+
+  <h3 class="popup-title">طرق الدفع المتاحة</h3>
+
+  <div class="methods">
+
+    <!-- Vodafone Cash -->
+    <div class="method vodafone" data-type="vodafone">
+      <i class="fa-solid fa-mobile-screen"></i>
+      <span>Vodafone Cash</span>
+    </div>
+
+    <!-- InstaPay -->
+    <div class="method instapay" data-type="instapay">
+      <i class="fa-solid fa-qrcode"></i>
+      <span>InstaPay</span>
+    </div>
+
   </div>
+
+  <!-- Details Box -->
+  <div class="payment-details" id="paymentDetails"></div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">✔ تم النسخ</div>
+</div>
+
 
 
 

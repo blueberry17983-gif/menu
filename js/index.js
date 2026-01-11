@@ -10,48 +10,120 @@ setTimeout(() => {
 }, 4000);
 
 // Floating Cash
+// const openBtn = document.getElementById("openPayment");
+// const closeBtn = document.getElementById("closePayment");
+// const popupCash = document.getElementById("paymentPopup");
+// const overlay = document.getElementById("paymentOverlay");
+// const methods = document.querySelectorAll(".payment-method");
+// const resultBox = document.getElementById("paymentResult");
+// const numberText = document.getElementById("paymentNumber");
+// const copyBtn = document.getElementById("copyNumber");
+// const copyMsg = document.getElementById("copyMsg");
+
+// openBtn.onclick = () => {
+//   popupCash.classList.add("active");
+//   overlay.classList.add("active");
+// };
+
+// methods.forEach(method => {
+//   method.addEventListener("click", () => {
+//     const number = method.dataset.number;
+
+//     numberText.textContent = number;
+//     resultBox.style.display = "block";
+//     copyMsg.style.display = "none";
+//   });
+// });
+
+// copyBtn.addEventListener("click", () => {
+//   navigator.clipboard.writeText(numberText.textContent);
+//   copyMsg.style.display = "block";
+// });
+
+// function closePopup() {
+//   popupCash.classList.remove("active");
+//   overlay.classList.remove("active");
+// }
+
+// closeBtn.onclick = closePopup;
+// overlay.onclick = closePopup;
+
 const openBtn = document.getElementById("openPayment");
 const closeBtn = document.getElementById("closePayment");
-const popupCash = document.getElementById("paymentPopup");
+const popupcash = document.getElementById("paymentPopup");
 const overlay = document.getElementById("paymentOverlay");
-const methods = document.querySelectorAll(".payment-method");
-const resultBox = document.getElementById("paymentResult");
-const numberText = document.getElementById("paymentNumber");
-const copyBtn = document.getElementById("copyNumber");
-const copyMsg = document.getElementById("copyMsg");
+const details = document.getElementById("paymentDetails");
+const toast = document.getElementById("toast");
+
+let toastTimer = null;
 
 openBtn.onclick = () => {
-  popupCash.classList.add("active");
+  popupcash.classList.add("active");
   overlay.classList.add("active");
 };
 
-methods.forEach(method => {
-  method.addEventListener("click", () => {
-    const number = method.dataset.number;
-
-    numberText.textContent = number;
-    resultBox.style.display = "block";
-    copyMsg.style.display = "none";
-  });
-});
-
-copyBtn.addEventListener("click", () => {
-  navigator.clipboard.writeText(numberText.textContent);
-  copyMsg.style.display = "block";
-});
-
-
 function closePopup() {
-  popupCash.classList.remove("active");
+  popupcash.classList.remove("active");
   overlay.classList.remove("active");
+  resetState();
 }
 
 closeBtn.onclick = closePopup;
 overlay.onclick = closePopup;
 
+function resetState() {
+  details.style.display = "none";
+  details.innerHTML = "";
+  toast.classList.remove("show");
+  clearTimeout(toastTimer);
+}
 
+function showToast() {
+  toast.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000);
+}
 
+function copyText(text) {
+  navigator.clipboard.writeText(text);
+  showToast();
+}
 
+document.querySelectorAll(".method").forEach((method) => {
+  method.onclick = () => {
+    const type = method.dataset.type;
+
+    if (type === "vodafone") {
+      details.innerHTML = `
+  <strong>Vodafone Cash</strong>
+
+  <div class="copy-row" onclick="copyText('01006067349')">
+    <span>📞 01006067349</span>
+    <i class="fa-regular fa-copy"></i>
+  </div>
+`;
+    }
+
+    if (type === "instapay") {
+      details.innerHTML = `
+  <strong>InstaPay</strong>
+
+  <div class="copy-row">
+    <span>👤 Emad Mohamed Nagib</span>
+  </div>
+
+  <div class="copy-row" onclick="copyText('01006067349')">
+    <span>🔗 01006067349</span>
+    <i class="fa-regular fa-copy"></i>
+  </div>
+`;
+    }
+
+    details.style.display = "block";
+  };
+});
 
 /* NewYearCode
 // Fireworks effect
@@ -151,9 +223,6 @@ overlay.onclick = closePopup;
 // animate();
 */
 
-
-
-
 // Close Navbar
 document.querySelectorAll(".navbar-nav .nav-link").forEach((link) => {
   link.addEventListener("click", () => {
@@ -198,7 +267,6 @@ function scrollFunction() {
   }
 }
 
-
 document.getElementById("backToTop").addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
@@ -224,7 +292,7 @@ function getCart() {
 function saveCart(cart) {
   const data = {
     items: cart,
-    savedAt: Date.now() // وقت الحفظ بالميللي ثانية
+    savedAt: Date.now(), // وقت الحفظ بالميللي ثانية
   };
   localStorage.setItem("cart", JSON.stringify(data));
 }
@@ -397,12 +465,14 @@ if (popup) {
 
 // 🛒 حذف كل المنتجات
 function clearCart() {
-  const confirmDelete = confirm("هل أنت متأكد أنك تريد حذف كل المنتجات من السلة؟");
+  const confirmDelete = confirm(
+    "هل أنت متأكد أنك تريد حذف كل المنتجات من السلة؟"
+  );
   if (confirmDelete) {
     localStorage.removeItem("cart"); // فضي ال localStorage
-    updateCartCount();               // حدث العداد
-    syncButtons();                   // رجع الأزرار "إضافة"
+    updateCartCount(); // حدث العداد
+    syncButtons(); // رجع الأزرار "إضافة"
     const popup = document.getElementById("cart-popup");
-    popup.style.display = "none";    // اقفل البوب أب
+    popup.style.display = "none"; // اقفل البوب أب
   }
 }
