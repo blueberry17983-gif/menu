@@ -81,43 +81,43 @@
   </div> -->
 
   <!-- Floating Payment Button -->
-<div class="payment-float" id="openPayment">
-  <i class="fa-solid fa-wallet"></i>
-</div>
-
-<!-- Overlay -->
-<div class="payment-overlay" id="paymentOverlay"></div>
-
-<!-- Popup -->
-<div class="payment-popup" id="paymentPopup">
-  <button class="close-btn" id="closePayment">
-    <i class="fa-solid fa-xmark"></i>
-  </button>
-
-  <h3 class="popup-title">طرق الدفع المتاحة</h3>
-
-  <div class="methods">
-
-    <!-- Vodafone Cash -->
-    <div class="method vodafone" data-type="vodafone">
-      <i class="fa-solid fa-mobile-screen"></i>
-      <span>Vodafone Cash</span>
-    </div>
-
-    <!-- InstaPay -->
-    <div class="method instapay" data-type="instapay">
-      <i class="fa-solid fa-qrcode"></i>
-      <span>InstaPay</span>
-    </div>
-
+  <div class="payment-float" id="openPayment">
+    <i class="fa-solid fa-wallet"></i>
   </div>
 
-  <!-- Details Box -->
-  <div class="payment-details" id="paymentDetails"></div>
+  <!-- Overlay -->
+  <div class="payment-overlay" id="paymentOverlay"></div>
 
-  <!-- Toast -->
-  <div class="toast" id="toast">✔ تم النسخ</div>
-</div>
+  <!-- Popup -->
+  <div class="payment-popup" id="paymentPopup">
+    <button class="close-btn" id="closePayment">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <h3 class="popup-title">طرق الدفع المتاحة</h3>
+
+    <div class="methods">
+
+      <!-- Vodafone Cash -->
+      <div class="method vodafone" data-type="vodafone">
+        <i class="fa-solid fa-mobile-screen"></i>
+        <span>Vodafone Cash</span>
+      </div>
+
+      <!-- InstaPay -->
+      <div class="method instapay" data-type="instapay">
+        <i class="fa-solid fa-qrcode"></i>
+        <span>InstaPay</span>
+      </div>
+
+    </div>
+
+    <!-- Details Box -->
+    <div class="payment-details" id="paymentDetails"></div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">✔ تم النسخ</div>
+  </div>
 
 
 
@@ -263,6 +263,8 @@
     <section id="pizza" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🍕 بيتزا بلوبيري</h2>
       <div class="row g-4">
+
+        <!-- 125 جنيه -->
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/Products/بيبروني.jpg.webp" class="card-img-top" alt="بيتزا بلوبيري بيبروني">
@@ -283,42 +285,6 @@
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/not_found.jpg" class="card-img-top" alt="بيتزا بلوبيري سجق وبسطرمة">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري سجق وبسطرمة</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">140 جنيه</p>
-              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
-                المكونات: قطع سجق مع بسطرمة، فلفل، بصل، موتزاريلا، صوص باربيكيو و سمسم
-              </p>
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="1.2" data-name="بلوبيري سجق وبسطرمة" data-price="140">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/not_found.jpg" class="card-img-top" alt="بيتزا بلوبيري سي فوود">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري سي فوود</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">170 جنيه</p>
-              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
-                المكونات: جمبري طازج مع كاليماري، أصابع كابوريا، موتزاريلا، بصل، طماطم، فلفل، صوص رانش و سمسم
-              </p>
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="1.3" data-name="بلوبيري سي فوود" data-price="170">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/Products/هوت دوج.jpg" class="card-img-top" alt="بيتزا بلوبيري هوت دوج">
             <div class="card-body">
               <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري هوت دوج</h5>
@@ -328,6 +294,25 @@
               </p>
               <div class="d-flex justify-content-center align-items-center">
                 <button class="btn-add-to-cart mt-3" data-id="1.4" data-name="بلوبيري هوت دوج" data-price="125">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 140 جنيه -->
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/not_found.jpg" class="card-img-top" alt="بيتزا بلوبيري سجق وبسطرمة">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري سجق وبسطرمة</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">140 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                المكونات: قطع سجق مع بسطرمة، فلفل، بصل، موتزاريلا، صوص باربيكيو و سمسم
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn-add-to-cart mt-3" data-id="1.2" data-name="بلوبيري سجق وبسطرمة" data-price="140">
                   <i class="fas fa-plus"></i> إضافة
                 </button>
               </div>
@@ -389,42 +374,7 @@
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/not_found.jpg" class="card-img-top" alt="بيتزا بلوبيري مدخنة">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري سموكد</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">150 جنيه</p>
-              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
-                المكونات: شرائح لحم مدخن، شرائح تركية مدخنة، موتزاريلا، صوص رانش مع صوص تكساس و سمسم
-              </p>
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="1.8" data-name="بلوبيري سموكد" data-price="150">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/not_found.jpg" class="card-img-top" alt="بيتزا بلوبيري جمبري">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري جمبري</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">160 جنيه</p>
-              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
-                المكونات: جمبري طازه مع بصل، زيتون، موتزاريلا، فلفل، صوص رانش وسمسم
-              </p>
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="1.9" data-name="بلوبيري جمبري" data-price="160">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <!-- 145 جنيه -->
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/not_found.jpg" class="card-img-top" alt="بيتزا بلوبيري تشيكن سوبريم">
@@ -443,104 +393,70 @@
           </div>
         </div>
 
+        <!-- 150 جنيه -->
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/not_found.jpg" class="card-img-top" alt="بيتزا بلوبيري مدخنة">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري سموكد</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">150 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                المكونات: شرائح لحم مدخن، شرائح تركية مدخنة، موتزاريلا، صوص رانش مع صوص تكساس و سمسم
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn-add-to-cart mt-3" data-id="1.8" data-name="بلوبيري سموكد" data-price="150">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 160 جنيه -->
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/not_found.jpg" class="card-img-top" alt="بيتزا بلوبيري جمبري">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري جمبري</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">160 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                المكونات: جمبري طازه مع بصل، زيتون، موتزاريلا، فلفل، صوص رانش وسمسم
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn-add-to-cart mt-3" data-id="1.9" data-name="بلوبيري جمبري" data-price="160">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 170 جنيه -->
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/not_found.jpg" class="card-img-top" alt="بيتزا بلوبيري سي فوود">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بلوبيري سي فوود</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">170 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                المكونات: جمبري طازج مع كاليماري، أصابع كابوريا، موتزاريلا، بصل، طماطم، فلفل، صوص رانش و سمسم
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn-add-to-cart mt-3" data-id="1.3" data-name="بلوبيري سي فوود" data-price="170">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
+
 
     <section id="italian-pizza" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🍕 بيتزا إيطالي</h2>
       <div class="row g-4">
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/Products/كرسبي.jpg" class="card-img-top" alt="كرسبي">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">كرسبي</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">115 جنيه</p>
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.1" data-name="كرسبي" data-price="115">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/not_found.jpg" class="card-img-top" alt="سوبر سوبريم">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سوبر سوبريم</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">110 جنيه</p>
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.2" data-name="سوبر سوبريم"
-                  data-price="110">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/not_found.jpg" class="card-img-top" alt="سموكد">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سموكد</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">130 جنيه</p>
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.3" data-name="سموكد" data-price="130">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/not_found.jpg" class="card-img-top" alt="جمبري">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">جمبري</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">150 جنيه</p>
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.4" data-name="جمبري" data-price="150">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/Products/بيتزا رانش - 2.jpg" class="card-img-top" alt="تشيكن رانش">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تشيكن رانش</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">125 جنيه</p>
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.5" data-name="تشيكن رانش"
-                  data-price="125">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/not_found.jpg" class="card-img-top" alt="تونه">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تونه</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">135 جنيه</p>
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.6" data-name="تونه" data-price="135">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
@@ -566,6 +482,22 @@
               <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">100 جنيه</p>
               <div class="d-flex justify-content-center align-items-center">
                 <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.8" data-name="خضار" data-price="100">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/not_found.jpg" class="card-img-top" alt="سوبر سوبريم">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سوبر سوبريم</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">110 جنيه</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.2" data-name="سوبر سوبريم"
+                  data-price="110">
                   <i class="fas fa-plus"></i> إضافة
                 </button>
               </div>
@@ -607,37 +539,6 @@
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/not_found.jpg" class="card-img-top" alt="سجق">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سجق</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">120 جنيه</p>
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.11" data-name="سجق" data-price="120">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/not_found.jpg" class="card-img-top" alt="سي فود">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سي فود</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">150 جنيه</p>
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.12" data-name="سي فود"
-                  data-price="150">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/Products/بيتزا هوت دوج.jpg" class="card-img-top" alt="هوت دوج">
             <div class="card-body">
               <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">هوت دوج</h5>
@@ -645,6 +546,21 @@
               <div class="d-flex justify-content-center align-items-center">
                 <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.13" data-name="هوت دوج"
                   data-price="110">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/Products/كرسبي.jpg" class="card-img-top" alt="كرسبي">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">كرسبي</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">115 جنيه</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.1" data-name="كرسبي" data-price="115">
                   <i class="fas fa-plus"></i> إضافة
                 </button>
               </div>
@@ -670,6 +586,37 @@
 
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/not_found.jpg" class="card-img-top" alt="سجق">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سجق</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">120 جنيه</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.11" data-name="سجق" data-price="120">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/Products/بيتزا رانش - 2.jpg" class="card-img-top" alt="تشيكن رانش">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تشيكن رانش</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">125 جنيه</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.5" data-name="تشيكن رانش"
+                  data-price="125">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/not_found.jpg" class="card-img-top" alt="بسطرمة">
             <div class="card-body">
               <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بسطرمة</h5>
@@ -683,8 +630,71 @@
             </div>
           </div>
         </div>
+
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/not_found.jpg" class="card-img-top" alt="سموكد">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سموكد</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">130 جنيه</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.3" data-name="سموكد" data-price="130">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/not_found.jpg" class="card-img-top" alt="تونه">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تونه</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">135 جنيه</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.6" data-name="تونه" data-price="135">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/not_found.jpg" class="card-img-top" alt="جمبري">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">جمبري</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">150 جنيه</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.4" data-name="جمبري" data-price="150">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/not_found.jpg" class="card-img-top" alt="سي فود">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سي فود</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">150 جنيه</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn btn-success  mt-3 btn-add-to-cart" data-id="2.12" data-name="سي فود"
+                  data-price="150">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
+
 
     <section id="main-bowls" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🥘 أطباق رئيسية</h2>
@@ -915,6 +925,156 @@
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🍝 باستا</h2>
       <div class="row g-4">
 
+        <!-- 75 جنيه -->
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/Products/بلونيز -1.jpg" class="card-img-top" alt="أسياجتي بولونيز">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">أسياجتي بولونيز</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">75 جنيه</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn-add-to-cart mt-3" data-id="5.3" data-name="أسياجتي بولونيز" data-price="75">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/not_found.jpg" class="card-img-top" alt="أرابياتا">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">أرابياتا</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">75 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                مكونات: فلفل حار - صوص الطماطم - فراخ
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn-add-to-cart mt-3" data-id="5.10" data-name="أرابياتا" data-price="75">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 90 جنيه -->
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/not_found.jpg" class="card-img-top" alt="سويت شيلي">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سويت شيلي</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn-add-to-cart mt-3" data-id="5.1" data-name="سويت شيلي" data-price="90">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/Products/نجرسكو.jpg" class="card-img-top" alt="نجرسكو">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">نجرسكو</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                مكونات: فراخ مشوية مع مشروم صوص الكريمة والجبنة موتزاريلا
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn-add-to-cart mt-3" data-id="5.6" data-name="نجرسكو" data-price="90">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/not_found.jpg" class="card-img-top" alt="الفريدو">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">الفريدو</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
+                مكونات: قطع فراخ مشويه مع مشروم وصوص شيدر
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn-add-to-cart mt-3" data-id="5.7" data-name="الفريدو" data-price="90">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/not_found.jpg" class="card-img-top" alt="تشيكن كاري">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تشيكن كاري</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
+              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">مكونات: قطع فراخ مشوية - مشروم - صوص
+                الكريمة - جبنة بارميزان</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn-add-to-cart mt-3" data-id="5.11" data-name="تشيكن كاري" data-price="90">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 105 جنيه -->
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/Products/سويت اند سور.jpg" class="card-img-top" alt="سويت آند ساور">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سويت آند ساور</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">105 جنيه</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn-add-to-cart mt-3" data-id="5.2" data-name="سويت آند ساور" data-price="105">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/Products/ميكس جبن.jpg" class="card-img-top" alt="مكس تشيز">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">مكس تشيز</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">105 جنيه</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn-add-to-cart mt-3" data-id="5.5" data-name="مكس تشيز" data-price="105">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/Products/باستا_كرسبي.jpeg" class="card-img-top" alt="باستا كرسبي">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">باستا كرسبي</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">105 جنيه</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn-add-to-cart mt-3" data-id="5.12" data-name="باستا كرسبي" data-price="105">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 115 -->
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/Products/باستا البستو.jpeg" class="card-img-top" alt="باستا البستو">
@@ -933,131 +1093,23 @@
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/not_found.jpg" class="card-img-top" alt="سويت شيلي">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سويت شيلي</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
-
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="5.1" data-name="سويت شيلي" data-price="90">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/Products/سويت اند سور.jpg" class="card-img-top" alt="سويت آند ساور">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">سويت آند ساور</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">105 جنيه</p>
-
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="5.2" data-name="سويت آند ساور" data-price="105">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/Products/بلونيز -1.jpg" class="card-img-top" alt="أسياجتي بولونيز">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">أسياجتي بولونيز</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">75 جنيه</p>
-
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="5.3" data-name="أسياجتي بولونيز" data-price="75">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
+        <!-- 125 -->
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/not_found.jpg" class="card-img-top" alt="باستا كوردن بلو">
             <div class="card-body">
               <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">باستا كوردن بلو</h5>
               <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">125 جنيه</p>
-
               <div class="d-flex justify-content-center align-items-center">
                 <button class="btn-add-to-cart mt-3" data-id="5.4" data-name="باستا كوردن بلو" data-price="125">
                   <i class="fas fa-plus"></i> إضافة
                 </button>
               </div>
-
             </div>
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/Products/ميكس جبن.jpg" class="card-img-top" alt="مكس تشيز">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">مكس تشيز</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">105 جنيه</p>
-
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="5.5" data-name="مكس تشيز" data-price="105">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/Products/نجرسكو.jpg" class="card-img-top" alt="نجرسكو">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">نجرسكو</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
-              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
-                مكونات: فراخ مشوية مع مشروم صوص الكريمة والجبنة موتزاريلا
-              </p>
-
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="5.6" data-name="نجرسكو" data-price="90">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/not_found.jpg" class="card-img-top" alt="الفريدو">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">الفريدو</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
-              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
-                مكونات: قطع فراخ مشويه مع مشروم وصوص شيدر
-              </p>
-
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="5.7" data-name="الفريدو" data-price="90">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
+        <!-- 180 -->
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/Products/باستا سي فود.jpg" class="card-img-top" alt="سي فوود">
@@ -1067,7 +1119,6 @@
               <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
                 جمبري + كاليماري، + كابوريا مدخنه + وايت صوص + موتزاريلا
               </p>
-
               <div class="d-flex justify-content-center align-items-center">
                 <button class="btn-add-to-cart mt-3" data-id="5.8" data-name="سي فوود" data-price="180">
                   <i class="fas fa-plus"></i> إضافة
@@ -1077,6 +1128,7 @@
           </div>
         </div>
 
+        <!-- 220 -->
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/Products/طاجن سي فود.jpeg" class="card-img-top" alt="طاجن سي فود">
@@ -1086,7 +1138,6 @@
               <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
                 جمبري + كاليماري + كابوريا + وايت صوص + موتزاريلا
               </p>
-
               <div class="d-flex justify-content-center align-items-center">
                 <button class="btn-add-to-cart mt-3" data-id="5.9" data-name="طاجن سي فود" data-price="220">
                   <i class="fas fa-plus"></i> إضافة
@@ -1096,82 +1147,27 @@
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/not_found.jpg" class="card-img-top" alt="أرابياتا">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">أرابياتا</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">75 جنيه</p>
-              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">
-                مكونات: فلفل حار - صوص الطماطم - فراخ
-              </p>
-
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="5.10" data-name="أرابياتا" data-price="75">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/not_found.jpg" class="card-img-top" alt="تشيكن كاري">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تشيكن كاري</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
-              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">مكونات: قطع فراخ مشوية - مشروم - صوص
-                الكريمة - جبنة بارميزان</p>
-
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="5.11" data-name="تشيكن كاري" data-price="90">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
+        <!-- الكارد المتعلق بالكاربونارا زي ما هو في مكانه -->
         <!-- <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/not_found.jpg" class="card-img-top" alt="كاربونارا">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">كاربونارا</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">95 جنيه</p>
-              <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">مكونات: لحم مدخن - روزبيف - مشروم -
-                صوص كريمة</p>
-
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="5.11" data-name="كاربونارا" data-price="95">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-
-            </div>
-          </div>
-        </div> -->
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/Products/باستا_كرسبي.jpeg" class="card-img-top" alt="باستا كرسبي">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">باستا كرسبي</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
-
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="5.12" data-name="باستا كرسبي" data-price="90">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-
-            </div>
+      <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+        <img src="images/not_found.jpg" class="card-img-top" alt="كاربونارا">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">كاربونارا</h5>
+          <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">95 جنيه</p>
+          <p class="card-text mb-0" style="color: #d1d1d1; font-size: 0.9rem;">مكونات: لحم مدخن - روزبيف - مشروم -
+            صوص كريمة</p>
+          <div class="d-flex justify-content-center align-items-center">
+            <button class="btn-add-to-cart mt-3" data-id="5.11" data-name="كاربونارا" data-price="95">
+              <i class="fas fa-plus"></i> إضافة
+            </button>
           </div>
         </div>
       </div>
+    </div> -->
+
+      </div>
     </section>
+
 
     <section id="pan" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🥘 الطاسة</h2>
@@ -1385,6 +1381,8 @@
     <section id="starters" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🥗 المقبلات</h2>
       <div class="row g-4">
+
+        <!-- 30 جنيه -->
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/not_found.jpg" class="card-img-top" alt="بطاطس">
@@ -1400,21 +1398,7 @@
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/not_found.jpg" class="card-img-top" alt="بطاطس موتزاريلا">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بطاطس موتزاريلا</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">65 جنيه</p>
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="8.2" data-name="مقبلات - بطاطس موتزاريلا" data-price="65">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <!-- 55 جنيه -->
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/Products/بطاطس.jpg" class="card-img-top" alt="بطاطس هالابينو">
@@ -1423,21 +1407,6 @@
               <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">55 جنيه</p>
               <div class="d-flex justify-content-center align-items-center">
                 <button class="btn-add-to-cart mt-3" data-id="8.3" data-name="مقبلات - بطاطس هالابينو" data-price="55">
-                  <i class="fas fa-plus"></i> إضافة
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
-            <img src="images/Products/تشيكن وينجز.jpg" class="card-img-top" alt="تشيكن وينجز">
-            <div class="card-body">
-              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تشيكن وينجز</h5>
-              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">60 جنيه</p>
-              <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="8.4" data-name="مقبلات - تشيكن وينجز" data-price="60">
                   <i class="fas fa-plus"></i> إضافة
                 </button>
               </div>
@@ -1460,6 +1429,39 @@
           </div>
         </div>
 
+        <!-- 60 جنيه -->
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/Products/تشيكن وينجز.jpg" class="card-img-top" alt="تشيكن وينجز">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">تشيكن وينجز</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">60 جنيه</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn-add-to-cart mt-3" data-id="8.4" data-name="مقبلات - تشيكن وينجز" data-price="60">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 65 جنيه -->
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/not_found.jpg" class="card-img-top" alt="بطاطس موتزاريلا">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بطاطس موتزاريلا</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">65 جنيه</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn-add-to-cart mt-3" data-id="8.2" data-name="مقبلات - بطاطس موتزاريلا" data-price="65">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 70 جنيه -->
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/not_found.jpg" class="card-img-top" alt="ستريبس">
@@ -1475,6 +1477,7 @@
           </div>
         </div>
 
+        <!-- 90 جنيه -->
         <div class="col-md-4">
           <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
             <img src="images/not_found.jpg" class="card-img-top" alt="ميكس مقبلات">
@@ -1487,11 +1490,27 @@
                 </button>
               </div>
             </div>
-              
           </div>
         </div>
+
+        <div class="col-md-4">
+          <div class="card product-card h-100 shadow-sm border-0 bg-blueberry text-light">
+            <img src="images/Products/بطاطس_كرسبي.jpeg" class="card-img-top" alt="بطاطس كرسبي">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-2" style="color: #f8f9fa;">بطاطس كرسبي</h5>
+              <p class="card-text fw-semibold fs-5 mb-2 text-center" style="color: #ffc107;">90 جنيه</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn-add-to-cart mt-3" data-id="8.8" data-name="مقبلات - بطاطس" data-price="90">
+                  <i class="fas fa-plus"></i> إضافة
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
+
 
     <section id="salads" class="mb-5">
       <h2 class="mb-4 border-bottom border-dark pb-2 section-title">🥗 سلطات</h2>
@@ -2294,9 +2313,9 @@
             <img src="images/Products/توريو.jpg" class="card-img-top" alt="اوريو">
             <div class="card-body text-center">
               <h5 class="card-title fw-bold mb-2">اوريو</h5>
-              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">105 جنيه</p>
               <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="15.6" data-name="ميلك شيك - اوريو" data-price="90">
+                <button class="btn-add-to-cart mt-3" data-id="15.6" data-name="ميلك شيك - اوريو" data-price="105">
                   <i class="fas fa-plus"></i> إضافة
                 </button>
               </div>
@@ -2309,9 +2328,9 @@
             <img src="images/not_found.jpg" class="card-img-top" alt="كيت كات">
             <div class="card-body text-center">
               <h5 class="card-title fw-bold mb-2">كيت كات</h5>
-              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">110 جنيه</p>
               <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="15.7" data-name="ميلك شيك - كيت كات" data-price="90">
+                <button class="btn-add-to-cart mt-3" data-id="15.7" data-name="ميلك شيك - كيت كات" data-price="110">
                   <i class="fas fa-plus"></i> إضافة
                 </button>
               </div>
@@ -2324,9 +2343,9 @@
             <img src="images/Products/بيستاشيو.jpg" class="card-img-top" alt="بستاشيو">
             <div class="card-body text-center">
               <h5 class="card-title fw-bold mb-2">بستاشيو</h5>
-              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">110 جنيه</p>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">135 جنيه</p>
               <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="15.8" data-name="ميلك شيك - بستاشيو" data-price="110">
+                <button class="btn-add-to-cart mt-3" data-id="15.8" data-name="ميلك شيك - بستاشيو" data-price="135">
                   <i class="fas fa-plus"></i> إضافة
                 </button>
               </div>
@@ -2339,9 +2358,9 @@
             <img src="images/not_found.jpg" class="card-img-top" alt="هوهوز">
             <div class="card-body text-center">
               <h5 class="card-title fw-bold mb-2">هوهوز</h5>
-              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">105 جنيه</p>
               <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="15.9" data-name="ميلك شيك - هوهوز" data-price="90">
+                <button class="btn-add-to-cart mt-3" data-id="15.9" data-name="ميلك شيك - هوهوز" data-price="105">
                   <i class="fas fa-plus"></i> إضافة
                 </button>
               </div>
@@ -2354,9 +2373,9 @@
             <img src="images/not_found.jpg" class="card-img-top" alt="توينكز">
             <div class="card-body text-center">
               <h5 class="card-title fw-bold mb-2">توينكز</h5>
-              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">105 جنيه</p>
               <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="15.10" data-name="ميلك شيك - توينكز" data-price="90">
+                <button class="btn-add-to-cart mt-3" data-id="15.10" data-name="ميلك شيك - توينكز" data-price="105">
                   <i class="fas fa-plus"></i> إضافة
                 </button>
               </div>
@@ -2369,9 +2388,9 @@
             <img src="images/not_found.jpg" class="card-img-top" alt="سنيكرز">
             <div class="card-body text-center">
               <h5 class="card-title fw-bold mb-2">سنيكرز</h5>
-              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">110 جنيه</p>
               <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="15.11" data-name="ميلك شيك - سنيكرز" data-price="90">
+                <button class="btn-add-to-cart mt-3" data-id="15.11" data-name="ميلك شيك - سنيكرز" data-price="110">
                   <i class="fas fa-plus"></i> إضافة
                 </button>
               </div>
@@ -2384,9 +2403,9 @@
             <img src="images/Products/ميلك لوتس.jpg" class="card-img-top" alt="لوتس">
             <div class="card-body text-center">
               <h5 class="card-title fw-bold mb-2">لوتس</h5>
-              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">90 جنيه</p>
+              <p class="price fw-bold fs-5 mb-0" style="color: #ffc107;">105 جنيه</p>
               <div class="d-flex justify-content-center align-items-center">
-                <button class="btn-add-to-cart mt-3" data-id="15.12" data-name="ميلك شيك - لوتس" data-price="90">
+                <button class="btn-add-to-cart mt-3" data-id="15.12" data-name="ميلك شيك - لوتس" data-price="105">
                   <i class="fas fa-plus"></i> إضافة
                 </button>
               </div>
