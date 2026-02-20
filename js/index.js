@@ -500,3 +500,18 @@ document.addEventListener("DOMContentLoaded", function () {
     bg.appendChild(span);
   }
 });
+
+    document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      if (this.getAttribute('href').startsWith('#')) return;
+
+      e.preventDefault();
+      const target = this.getAttribute('href');
+
+      document.querySelector('.page-transition').classList.add('fade-out');
+
+      setTimeout(() => {
+        window.location.href = target;
+      }, 400);
+    });
+  });

@@ -4,3 +4,4 @@
       setTimeout(() => card.classList.remove('active'), 200);
     });
   });
+
