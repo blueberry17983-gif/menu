@@ -1,0 +1,80 @@
+body {
+  font-family: 'Cairo', sans-serif;
+}
+
+.ramadan-page {
+  background: linear-gradient(180deg, #1f103f, #2c165c);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* الترحيب */
+.ramadan-welcome {
+  font-weight: 700;
+  color: #ffd700;
+}
+
+.ramadan-intro {
+  opacity: 0.85;
+  font-size: 15px;
+}
+
+/* عنوان كل Section */
+.section-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.section-title i {
+  color: #ffd700;
+  margin-left: 8px;
+}
+
+/* الكارد */
+.menu-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 28px 22px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+
+/* اسم المنتج */
+.product-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+/* المكونات */
+.product-ingredients {
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+}
+
+/* السعر */
+.product-price {
+  margin-top: auto;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffd700;
+}
+
+.product-price span {
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+

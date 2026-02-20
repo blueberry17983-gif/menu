@@ -187,6 +187,130 @@ body {
   color: #22c55e;
 } */
 
+/* Ramadan Menu */
+.ramadan-btn {
+  position: relative;
+  display: block;
+  width: 95%;
+  margin: 20px auto;
+  padding: 40px 15px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #2b1055, #4b2c83);
+  overflow: hidden;
+  direction: rtl;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.35);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Hover effect */
+.ramadan-btn:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 32px rgba(255, 215, 0, 0.7);
+}
+
+/* النص */
+.ramadan-content {
+  position: relative;
+  z-index: 2;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* النص الهادئ */
+.ramadan-subtitle {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 0.3px;
+}
+
+/* العنوان الرئيسي */
+.ramadan-title {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #ffffff;
+  margin: 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* الأيقونات */
+.ramadan-title i,
+.ramadan-subtitle i {
+  color: #ffd700;
+  font-size: 0.9em;
+}
+
+/* Hover */
+.ramadan-btn:hover .ramadan-title {
+  color: #ffd700;
+  transform: scale(1.05);
+}
+
+.ramadan-content p {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 0.85;
+  margin-top: 6px;
+}
+
+/* الخلفية */
+.ramadan-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.ramadan-bg span {
+  position: absolute;
+  bottom: -60px;
+  opacity: 0.22;
+  animation-name: floatUp;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* تهدئة الخلفية عند hover */
+.ramadan-btn:hover .ramadan-bg span {
+  opacity: 0.12;
+  animation-duration: 8s !important;
+}
+
+/* حركة العناصر */
+@keyframes floatUp {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  to {
+    transform: translate(var(--moveX), -140vh) rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .ramadan-content h3 {
+    font-size: 22px;
+  }
+  .ramadan-content p {
+    font-size: 13px;
+  }
+  .ramadan-btn {
+    margin-top: 20%;
+    padding: 20px 10px;
+  }
+}
+/* Ramadan Menu */
+
 /* Floating Button */
 .payment-float {
   position: fixed;

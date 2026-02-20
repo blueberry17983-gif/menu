@@ -476,3 +476,27 @@ function clearCart() {
     popup.style.display = "none"; // اقفل البوب أب
   }
 }
+
+
+// Ramadan Menu
+
+document.addEventListener("DOMContentLoaded", function () {
+  const bg = document.querySelector(".ramadan-bg");
+  const icons = ["🌙", "🏮"];
+  const count = 22; // عدد الأشكال
+
+  for (let i = 0; i < count; i++) {
+    const span = document.createElement("span");
+    span.textContent = icons[Math.floor(Math.random() * icons.length)];
+
+    span.style.left = Math.random() * 100 + "%";
+    span.style.fontSize = 16 + Math.random() * 22 + "px";
+    span.style.animationDuration = 4 + Math.random() * 6 + "s";
+    span.style.animationDelay = Math.random() * 5 + "s";
+
+    const moveX = Math.random() * 80 - 40; // حركة جانبية عشوائية
+    span.style.setProperty("--moveX", moveX + "px");
+
+    bg.appendChild(span);
+  }
+});
