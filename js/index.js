@@ -1,13 +1,76 @@
 // Hide splash screen after 4 seconds
+// setTimeout(() => {
+//   const splash = document.getElementById("splash-screen");
+//   if (!splash) return;
+
+//   splash.style.animation = "fadeOut 1s ease forwards";
+//   setTimeout(() => {
+//     splash.style.display = "none";
+//   }, 1000);
+// }, 4000);
+
+// Eid Fitr Splash Screen
+const canvas = document.getElementById("fireworks");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particles = [];
+
+function createFirework() {
+  const x = Math.random() * canvas.width;
+  const y = (Math.random() * canvas.height) / 2;
+
+  for (let i = 0; i < 25; i++) {
+    particles.push({
+      x,
+      y,
+      radius: Math.random() * 2 + 1,
+      color: `hsl(${Math.random() * 360}, 100%, 60%)`,
+      speedX: (Math.random() - 0.5) * 4,
+      speedY: (Math.random() - 0.5) * 4,
+      life: 60,
+    });
+  }
+}
+
+function animate() {
+  ctx.fillStyle = "rgba(0,0,0,0.2)";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  particles.forEach((p, index) => {
+    p.x += p.speedX;
+    p.y += p.speedY;
+    p.life--;
+
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+    ctx.fillStyle = p.color;
+    ctx.fill();
+
+    if (p.life <= 0) {
+      particles.splice(index, 1);
+    }
+  });
+
+  requestAnimationFrame(animate);
+}
+
+setInterval(createFirework, 800);
+animate();
+
+// بدل 4 ثواني → 2.5 كفاية
 setTimeout(() => {
   const splash = document.getElementById("splash-screen");
   if (!splash) return;
 
-  splash.style.animation = "fadeOut 1s ease forwards";
+  splash.style.animation = "fadeOut 0.8s ease forwards";
+
   setTimeout(() => {
     splash.style.display = "none";
-  }, 1000);
-}, 4000);
+  }, 800);
+}, 2500);
 
 // Floating Cash
 // const openBtn = document.getElementById("openPayment");
@@ -466,7 +529,7 @@ if (popup) {
 // 🛒 حذف كل المنتجات
 function clearCart() {
   const confirmDelete = confirm(
-    "هل أنت متأكد أنك تريد حذف كل المنتجات من السلة؟"
+    "هل أنت متأكد أنك تريد حذف كل المنتجات من السلة؟",
   );
   if (confirmDelete) {
     localStorage.removeItem("cart"); // فضي ال localStorage
@@ -476,7 +539,6 @@ function clearCart() {
     popup.style.display = "none"; // اقفل البوب أب
   }
 }
-
 
 // Ramadan Menu
 
@@ -501,17 +563,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-    document.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', function (e) {
-      if (this.getAttribute('href').startsWith('#')) return;
+document.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", function (e) {
+    if (this.getAttribute("href").startsWith("#")) return;
 
-      e.preventDefault();
-      const target = this.getAttribute('href');
+    e.preventDefault();
+    const target = this.getAttribute("href");
 
-      document.querySelector('.page-transition').classList.add('fade-out');
+    document.querySelector(".page-transition").classList.add("fade-out");
 
-      setTimeout(() => {
-        window.location.href = target;
-      }, 400);
-    });
+    setTimeout(() => {
+      window.location.href = target;
+    }, 400);
   });
+});

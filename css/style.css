@@ -13,8 +13,6 @@ body {
   opacity: 0;
 }
 
-
-
 /* .santa-hat {
   top: -25%; 
   left: -10%;
@@ -213,7 +211,9 @@ body {
   text-align: center;
   cursor: pointer;
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.35);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 /* Hover effect */
@@ -236,7 +236,7 @@ body {
 
 /* النص الهادئ */
 .ramadan-subtitle {
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 500;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.85);
@@ -245,12 +245,14 @@ body {
 
 /* العنوان الرئيسي */
 .ramadan-title {
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 700;
   font-size: 26px;
   color: #ffffff;
   margin: 0;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 /* الأيقونات */
@@ -267,7 +269,7 @@ body {
 }
 
 .ramadan-content p {
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 500;
   font-size: 15px;
   opacity: 0.85;
@@ -572,7 +574,9 @@ body {
   border: none;
   background-color: #3d5a80;
   color: white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .product-card:hover {
   transform: scale(1.05);
@@ -622,8 +626,8 @@ section {
   z-index: 10;
 }
 
-/* Splash Screen Styles */
-#splash-screen {
+/* Main Splash Screen Styles */
+/* #splash-screen {
   position: fixed;
   top: 0;
   left: 0;
@@ -681,10 +685,10 @@ section {
   margin-top: 10px;
   color: #00ffea;
   text-shadow: 0 0 5px #fff, 0 0 10px #00ffea;
-}
+} */
 
 /* Animations */
-@keyframes zoomIn {
+/* @keyframes zoomIn {
   from {
     transform: scale(0.8);
     opacity: 0;
@@ -708,6 +712,126 @@ section {
   }
   to {
     transform: translateY(-10px);
+  }
+} */
+
+/* Eid Fitr Splash Screen */
+#splash-screen { 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background: linear-gradient(-45deg, #1a1a2e, #16213e, #3a0ca3, #7209b7); 
+  background-size: 400% 400%; 
+  animation: gradientMove 10s ease infinite; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  z-index: 9999; 
+  overflow: hidden; 
+}
+
+#fireworks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.splash-content { 
+  text-align: center; 
+  color: white; 
+  padding: 30px; 
+  border-radius: 20px; 
+  background: rgba(255, 255, 255, 0.05); 
+  backdrop-filter: blur(12px); 
+  box-shadow: 0 0 30px rgba(0,0,0,0.3); 
+  animation: zoomIn 0.8s ease; 
+}
+
+.splash-logo { 
+  width: 110px; 
+  height: 110px; 
+  border-radius: 50%; 
+  margin-bottom: 15px; 
+  animation: glow 2s ease-in-out infinite alternate; 
+}
+
+.splash-title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin: 0;
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+.splash-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+.celebration {
+  font-size: 1.4rem;
+  margin-top: 15px;
+  color: #ffd700;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+  }
+  to {
+    box-shadow: 0 0 30px rgba(255,255,255,0.8);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -871,7 +995,9 @@ section {
   width: 45px;
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s, transform 0.3s;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
 }
 
 #backToTop:hover {
