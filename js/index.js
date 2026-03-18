@@ -10,66 +10,67 @@
 // }, 4000);
 
 // Eid Fitr Splash Screen
-const canvas = document.getElementById("fireworks");
-const ctx = canvas.getContext("2d");
+const canvas = document.getElementById("fireworks"); 
+const ctx = canvas.getContext("2d"); 
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = window.innerWidth; 
+canvas.height = window.innerHeight; 
 
-let particles = [];
+let particles = []; 
 
-function createFirework() {
-  const x = Math.random() * canvas.width;
-  const y = (Math.random() * canvas.height) / 2;
+function createFirework() { 
+  const x = Math.random() * canvas.width; 
+  const y = (Math.random() * canvas.height) / 2; 
 
-  for (let i = 0; i < 25; i++) {
-    particles.push({
-      x,
-      y,
-      radius: Math.random() * 2 + 1,
-      color: `hsl(${Math.random() * 360}, 100%, 60%)`,
-      speedX: (Math.random() - 0.5) * 4,
-      speedY: (Math.random() - 0.5) * 4,
-      life: 60,
-    });
-  }
-}
+  for (let i = 0; i < 35; i++) { 
+    particles.push({ 
+      x, 
+      y, 
+      radius: Math.random() * 2 + 1.5, 
+      color: `hsl(${Math.random() * 360}, 100%, 65%)`, 
+      speedX: (Math.random() - 0.5) * 5, 
+      speedY: (Math.random() - 0.5) * 5, 
+      life: 70, 
+    }); 
+  } 
+} 
 
-function animate() {
-  ctx.fillStyle = "rgba(0,0,0,0.2)";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+function animate() { 
+  ctx.fillStyle = "rgba(0,0,0,0.2)"; 
+  ctx.fillRect(0, 0, canvas.width, canvas.height); 
 
-  particles.forEach((p, index) => {
-    p.x += p.speedX;
-    p.y += p.speedY;
-    p.life--;
+  particles.forEach((p, index) => { 
+    p.x += p.speedX; 
+    p.y += p.speedY; 
+    p.life--; 
 
-    ctx.beginPath();
-    ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-    ctx.fillStyle = p.color;
-    ctx.fill();
+    ctx.beginPath(); 
+    ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2); 
+    ctx.fillStyle = p.color; 
+    ctx.shadowBlur = 15; 
+    ctx.shadowColor = p.color;
+    ctx.fill(); 
 
-    if (p.life <= 0) {
-      particles.splice(index, 1);
-    }
-  });
+    if (p.life <= 0) { 
+      particles.splice(index, 1); 
+    } 
+  }); 
 
-  requestAnimationFrame(animate);
-}
+  requestAnimationFrame(animate); 
+} 
 
-setInterval(createFirework, 800);
-animate();
+setInterval(createFirework, 600); // أسرع شوية 
+animate(); 
 
-// بدل 4 ثواني → 2.5 كفاية
-setTimeout(() => {
-  const splash = document.getElementById("splash-screen");
-  if (!splash) return;
+// مدة splash
+setTimeout(() => { 
+  const splash = document.getElementById("splash-screen"); 
+  if (!splash) return; 
 
-  splash.style.animation = "fadeOut 0.8s ease forwards";
-
-  setTimeout(() => {
-    splash.style.display = "none";
-  }, 800);
+  splash.style.animation = "fadeOut 0.8s ease forwards"; 
+  setTimeout(() => { 
+    splash.style.display = "none"; 
+  }, 800); 
 }, 2500);
 
 // Floating Cash
