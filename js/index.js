@@ -1,11 +1,10 @@
 // Hide splash screen after 4 seconds
 setTimeout(() => {
   const splash = document.getElementById("splash-screen");
-  if (!splash) return;
-
-  splash.style.animation = "fadeOut 1s ease forwards";
+  splash.style.opacity = "0"; // اختفاء سلس
+  splash.style.animation = "none"; // إيقاف حركة الـ gradient لتقليل الوميض
   setTimeout(() => {
-    splash.style.display = "none";
+    splash.style.display = "none"; // إزالة العنصر بعد الاختفاء
   }, 1000);
 }, 4000);
 
